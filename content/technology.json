@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Technology | Advanced Battery Concepts",
+    "description": "GreenSeal and EverGreenSeal bipolar lead battery technology. CEES 48 kWh modular unit. Zero thermal runaway. 54+ patents worldwide.",
+    "og_title": "Technology | Advanced Battery Concepts",
+    "og_description": "GreenSeal and EverGreenSeal bipolar lead battery technology. CEES 48 kWh modular unit. Zero thermal runaway. 54+ patents worldwide."
+  },
+  "active_nav": "technology",
+  "hero": {
+    "label": "GreenSeal / EverGreenSeal Technology",
+    "title": "Engineered for Environments That Break Lithium",
+    "desc": "ABC's bipolar architecture is fundamentally different from conventional battery design. Instead of scaling consumer-grade chemistry, we engineered a platform from the ground up for large-format, mission-critical energy storage where fire risk, extreme temperatures, and environmental exposure are operating conditions, not edge cases."
+  },
+  "cutaway_image": {
+    "image_src": "./assets/tech-cutaway.png",
+    "image_alt": "Cube-shaped bipolar lead battery cutaway showing internal cell architecture",
+    "quote": "Bipolar Lead: The Architecture Lithium Cannot Match"
+  },
+  "cees_unit": {
+    "label": "CEES 48 kWh Unit",
+    "title": "The Core Building Block",
+    "desc": "Every ABC deployment starts with the CEES cartridge. One modular unit that scales from kilowatts to megawatts.",
+    "image_src": "./assets/cees-unit.png",
+    "image_alt": "CEES 48 kWh battery cartridge, cube-shaped steel enclosure with CEES label",
+    "heading": "CEES 48 kWh Cartridge",
+    "text_1": "The CEES cartridge is a near-cube steel enclosure housing 48 GC07481M bipolar lead modules. 52.3 inches long, 45.8 inches wide, 80 inches tall. 3,550 lbs. IP55/NEMA3R rated. Deploys indoors or outdoors with zero HVAC, zero fire suppression, and zero climate control. Stackable up to 4 units high.",
+    "text_2": "Backed by a 20-year performance warranty and a 15-year daily cycle life warranty with zero augmentation required.",
+    "specs": [
+      { "value": "48 kWh", "label": "Energy capacity per CEES cartridge. 288V nominal, 50.4 kWh total from 48 GC07481M bipolar lead modules." },
+      { "value": "-40 to 55 C", "label": "Ambient operating temperature range with no HVAC, no heaters, no chillers required at any point." },
+      { "value": "Zero", "label": "Thermal runaway events. Aqueous electrolyte chemistry makes thermal runaway physically impossible." },
+      { "value": "IP55 / NEMA3R", "label": "Environmental protection rating. Indoor or outdoor deployment. UL 1973 certified, UN 2800 classified." },
+      { "value": "Less than 0.1%/yr", "label": "Annual capacity degradation. Effectively no measurable fade over the 20-year design life." },
+      { "value": "15-Year", "label": "Daily cycle life warranty. Backed by a full 20-year performance warranty with zero augmentation." },
+      { "value": "3,550 lbs", "label": "Unit weight. 52.3 inches long, 45.8 inches wide, 80 inches high. Stackable up to 4 units high." }
+    ]
+  },
+  "bipolar_architecture": {
+    "label": "Core Architecture",
+    "title": "Bipolar Architecture Advantage",
+    "heading": "How Bipolar Lead Differs",
+    "text_1": "Traditional monopolar batteries connect cells externally using heavy bus bars and complex wiring. Each cell is a separate unit, leading to uneven current distribution, wasted space, and increased resistance. ABC's bipolar architecture stacks cells internally. Each electrode serves as both the positive plate of one cell and the negative plate of the next.",
+    "text_2": "This design eliminates intercell connections, reduces internal resistance, and creates a compact, high-voltage module that outperforms monopolar designs in every metric that matters for critical infrastructure.",
+    "list_items": [
+      "Uniform current density across the entire electrode surface",
+      "Higher energy density through elimination of intercell hardware",
+      "Simpler BMS requirements due to inherent cell balancing",
+      "Lower manufacturing cost via automated stacking processes"
+    ],
+    "image_src": "./assets/tech-cutaway.png",
+    "image_alt": "ABC cube-shaped bipolar battery cell showing internal bipolar plate stacking"
+  },
+  "proprietary_tech": {
+    "label": "Proprietary Technologies",
+    "title": "Protected by 54+ Patents Worldwide",
+    "desc": "Every layer of ABC's technology stack is protected intellectual property, from the cell architecture to the manufacturing process.",
+    "items": [
+      {
+        "icon": "Platform / GreenSeal",
+        "title": "GreenSeal&reg;",
+        "desc": "ABC's original bipolar lead battery platform. Validated across thousands of cycles and multiple deployment environments. The foundation for all ABC products."
+      },
+      {
+        "icon": "Platform / EverGreenSeal",
+        "title": "EverGreenSeal&trade;",
+        "desc": "Next-generation platform for utility-scale and long-duration storage. Enhanced cycle life, higher energy density, and optimized form factors for grid infrastructure and Battery Barn deployments."
+      },
+      {
+        "icon": "Sealing / ViaLock",
+        "title": "ViaLock&reg;",
+        "desc": "Proprietary cell-to-cell sealing technology. Creates hermetic seals between bipolar cells that withstand extreme temperature cycling, mechanical stress, and decades of electrochemical activity."
+      },
+      {
+        "icon": "Manufacturing / RapidFill",
+        "title": "RapidFill&trade;",
+        "desc": "Proprietary electrolyte filling process ensuring consistent, void-free fills across every cell in the bipolar stack. Essential to manufacturing quality and throughput."
+      }
+    ]
+  },
+  "scaling": {
+    "label": "Deployment Scaling",
+    "title": "From 48 kWh to 20 MWh",
+    "items": [
+      {
+        "icon": "48 kWh / Single Unit",
+        "title": "Single CEES Cartridge",
+        "desc": "One CEES cartridge for residential backup, small commercial, or remote monitoring stations."
+      },
+      {
+        "icon": "384 to 768 kWh / BoxBe Container",
+        "title": "BoxBe Container",
+        "desc": "8 to 16 CEES cartridges in 10-foot or 20-foot ISO containers. Pre-integrated, pre-tested, transport ready."
+      },
+      {
+        "icon": "20 MWh / Battery Barn",
+        "title": "Battery Barn",
+        "desc": "432 cartridges in a 6,000 sq ft warehouse. 5 MW AC output. 4-hour duration. The largest deployment configuration."
+      }
+    ]
+  },
+  "cta": {
+    "label": "Get Started",
+    "title": "See How ABC Technology Fits Your Project",
+    "cta_primary_text": "Request Assessment",
+    "cta_primary_href": "./contact.html",
+    "cta_secondary_text": "View Deployments",
+    "cta_secondary_href": "./applications.html"
+  }
+}

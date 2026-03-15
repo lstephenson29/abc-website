@@ -1,0 +1,126 @@
+{{> header}}
+
+<!-- MAIN CONTENT -->
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="{{hero.image_src}}" alt="{{hero.image_alt}}" width="1920" height="1080" loading="eager">
+    </div>
+    <div class="hero-content">
+      <p class="hero-label">{{hero.label}}</p>
+      <h1>{{hero.title}}</h1>
+      <p class="hero-sub">{{hero.subtitle}}</p>
+      <div class="hero-actions">
+        <a href="{{hero.cta_primary_href}}" class="btn btn--primary">{{hero.cta_primary_text}}</a>
+        <a href="{{hero.cta_secondary_href}}" class="btn btn--outline">{{hero.cta_secondary_text}}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEC BAR -->
+  <div class="spec-bar">
+    <div class="spec-bar-inner">
+{{#each spec_bar}}
+      <div class="spec-item fade-in">
+        <div class="spec-value">{{value}}</div>
+        <div class="spec-label">{{label}}</div>
+      </div>
+{{/each}}
+    </div>
+  </div>
+
+  <!-- ONE PRODUCT, THREE DEPLOYMENT VERTICALS -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label fade-in">{{deployments.label}}</p>
+      <h2 class="section-title fade-in">{{deployments.title}}</h2>
+      <p class="section-desc fade-in">{{deployments.desc}}</p>
+
+      <div class="features-grid">
+{{#each deployments.items}}
+        <div class="feature-item fade-in">
+          <div class="feature-icon">{{icon}}</div>
+          <h3 class="feature-title">{{title}}</h3>
+          <p class="feature-desc">{{desc}}</p>
+        </div>
+{{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- ENVIRONMENTS GRID -->
+  <section>
+    <div class="container section--tight">
+      <p class="section-label fade-in">{{environments.label}}</p>
+      <h2 class="section-title fade-in">{{environments.title}}</h2>
+    </div>
+    <div class="env-grid env-grid--four" style="grid-template-columns: repeat(4, 1fr);">
+{{#each environments.items}}
+      <div class="env-card fade-in">
+        <img src="{{image_src}}" alt="{{image_alt}}" width="800" height="600" loading="lazy">
+        <div class="env-card-overlay">
+          <div class="env-card-overlay-text">
+            <p class="env-card-temp">{{{temp}}}</p>
+            <h3 class="env-card-title">{{{title}}}</h3>
+            <p class="env-card-desc">{{desc}}</p>
+          </div>
+        </div>
+      </div>
+{{/each}}
+    </div>
+  </section>
+
+  <!-- IMAGE BREAK -->
+  <div class="image-break fade-in">
+    <img src="{{image_break.image_src}}" alt="{{image_break.image_alt}}" width="1920" height="800" loading="lazy">
+    <div class="image-break-overlay">
+      <blockquote class="image-break-quote image-break-text">{{image_break.quote}}</blockquote>
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <section class="section comparison-section">
+    <div class="container">
+      <p class="section-label fade-in">{{comparison.label}}</p>
+      <h2 class="section-title fade-in">{{comparison.title}}</h2>
+      <p class="section-desc fade-in">{{comparison.desc}}</p>
+
+      <table class="comparison-table fade-in">
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>ABC Bipolar Lead</th>
+            <th>Lithium-Ion</th>
+          </tr>
+        </thead>
+        <tbody>
+{{#each comparison.rows}}
+          <tr>
+            <td>{{spec}}</td>
+            <td class="abc-col">{{abc}}</td>
+            <td class="lithium-col">{{lithium}}</td>
+          </tr>
+{{/each}}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <p class="section-label fade-in">{{cta.label}}</p>
+      <h2 class="section-title fade-in">{{cta.title}}</h2>
+      <p class="section-desc fade-in">{{cta.desc}}</p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a href="{{cta.cta_primary_href}}" class="btn btn--primary">{{cta.cta_primary_text}}</a>
+        <a href="{{cta.cta_secondary_href}}" class="btn btn--outline">{{cta.cta_secondary_text}}</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer}}

@@ -1,0 +1,105 @@
+{{> header}}
+
+<!-- MAIN CONTENT -->
+<main id="main">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero section">
+    <div class="container">
+      <p class="section-label fade-in">{{hero.label}}</p>
+      <h1 class="section-title fade-in">{{hero.title}}</h1>
+      <p class="section-desc fade-in">{{hero.desc}}</p>
+    </div>
+  </section>
+
+  <!-- DEPLOYMENT VERTICALS -->
+  <section class="section">
+    <div class="container">
+
+{{#each deployment_cards}}
+      <!-- Card {{card_number}}: {{label}} -->
+      <div class="app-card-large fade-in">
+        <div class="app-card-image">
+          <img src="{{image_src}}" alt="{{image_alt}}" width="800" height="600" loading="lazy">
+        </div>
+        <div class="app-card-content">
+          <p class="section-label">{{label}}</p>
+          <h3>{{title}}</h3>
+          <p>{{{desc}}}</p>
+          <div class="app-card-specs">
+{{#each tags}}
+            <span class="app-spec-tag">{{this}}</span>
+{{/each}}
+          </div>
+{{#if link_href}}
+          <div style="margin-top: var(--space-6);">
+            <a href="{{link_href}}" class="btn btn--ghost">{{{link_text}}}</a>
+          </div>
+{{/if}}
+        </div>
+      </div>
+
+{{/each}}
+    </div>
+  </section>
+
+  <!-- CASE STUDY: MANITOU ISLANDS -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container">
+      <p class="section-label fade-in">{{case_study.label}}</p>
+      <h2 class="section-title fade-in">{{case_study.title}}</h2>
+
+      <div class="arch-grid">
+        <div class="arch-text fade-in">
+          <h3>{{case_study.heading}}</h3>
+          <p>{{case_study.desc}}</p>
+          <ul>
+{{#each case_study.list_items}}
+            <li>{{this}}</li>
+{{/each}}
+          </ul>
+        </div>
+        <div class="arch-visual fade-in">
+          <img src="{{case_study.image_src}}" alt="{{case_study.image_alt}}" width="800" height="600" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENVIRONMENTS GRID -->
+  <section>
+    <div class="container section--tight">
+      <p class="section-label fade-in">{{environments.label}}</p>
+      <h2 class="section-title fade-in">{{environments.title}}</h2>
+    </div>
+    <div class="env-grid" style="grid-template-columns: repeat(4, 1fr);">
+{{#each environments.items}}
+      <div class="env-card fade-in">
+        <img src="{{image_src}}" alt="{{image_alt}}" width="800" height="600" loading="lazy">
+        <div class="env-card-overlay">
+          <div class="env-card-overlay-text">
+            <p class="env-card-temp">{{{temp}}}</p>
+            <h3 class="env-card-title">{{{title}}}</h3>
+            <p class="env-card-desc">{{desc}}</p>
+          </div>
+        </div>
+      </div>
+{{/each}}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <p class="section-label fade-in">{{cta.label}}</p>
+      <h2 class="section-title fade-in">{{cta.title}}</h2>
+      <div class="hero-actions" style="justify-content:center;">
+        <a href="{{cta.cta_primary_href}}" class="btn btn--primary">{{cta.cta_primary_text}}</a>
+        <a href="{{cta.cta_secondary_href}}" class="btn btn--outline">{{cta.cta_secondary_text}}</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer}}

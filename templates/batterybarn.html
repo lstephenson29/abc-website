@@ -1,0 +1,131 @@
+{{> header}}
+
+<main>
+
+  <!-- 1. PAGE HERO -->
+  <section class="page-hero section">
+    <div class="container">
+      <p class="section-label">{{hero.label}}</p>
+      <h1 class="section-title">{{hero.title}}</h1>
+      <p class="section-desc">{{hero.desc}}</p>
+    </div>
+  </section>
+
+  <!-- 2. FULL-WIDTH IMAGE -->
+  <div class="image-break">
+    <img src="{{hero_image.image_src}}" alt="{{hero_image.image_alt}}" loading="lazy">
+    <div class="image-break-overlay">
+      <p class="image-break-quote">{{hero_image.quote}}</p>
+    </div>
+  </div>
+
+  <!-- 3. KEY SPECIFICATIONS -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">{{key_specs.label}}</p>
+      <div class="tech-specs">
+{{#each key_specs.items}}
+        <div class="tech-spec-card">
+          <div class="spec-value">{{value}}</div>
+          <div class="spec-label">{{label}}</div>
+        </div>
+{{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SYSTEM ARCHITECTURE -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">{{architecture.label}}</p>
+      <div class="arch-grid">
+        <div class="arch-text">
+          <h3>{{architecture.heading}}</h3>
+          <p>{{architecture.desc}}</p>
+          <ul>
+{{#each architecture.list_items}}
+            <li>{{this}}</li>
+{{/each}}
+          </ul>
+        </div>
+        <div class="arch-visual">
+          <img src="{{architecture.image_src}}" alt="{{architecture.image_alt}}" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SAFETY AND COMPLIANCE -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">{{safety.label}}</p>
+      <h2 class="section-title">{{safety.title}}</h2>
+      <div class="features-grid">
+{{#each safety.items}}
+        <div class="feature-item">
+          <div class="feature-icon">{{icon}}</div>
+          <h3 class="feature-title">{{title}}</h3>
+          <p class="feature-desc">{{desc}}</p>
+        </div>
+{{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PERFORMANCE TABLE -->
+  <section class="section comparison-section">
+    <div class="container">
+      <p class="section-label">{{performance.label}}</p>
+      <h2 class="section-title">{{performance.title}}</h2>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>Specification</th>
+          </tr>
+        </thead>
+        <tbody>
+{{#each performance.rows}}
+          <tr>
+            <td>{{parameter}}</td>
+            <td>{{spec}}</td>
+          </tr>
+{{/each}}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 7. COST ADVANTAGE -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">{{cost.label}}</p>
+      <h2 class="section-title">{{cost.title}}</h2>
+      <div class="features-grid">
+{{#each cost.items}}
+        <div class="feature-item">
+          <div class="feature-icon">{{icon}}</div>
+          <h3 class="feature-title">{{title}}</h3>
+          <p class="feature-desc">{{desc}}</p>
+        </div>
+{{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <p class="section-label">{{cta.label}}</p>
+      <h2 class="section-title">{{cta.title}}</h2>
+      <p class="section-desc">{{cta.desc}}</p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a href="{{cta.cta_primary_href}}" class="btn btn--primary">{{cta.cta_primary_text}}</a>
+        <a href="{{cta.cta_secondary_href}}" class="btn btn--outline">{{cta.cta_secondary_text}}</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer}}

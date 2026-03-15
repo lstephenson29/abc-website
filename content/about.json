@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "About - Advanced Battery Concepts",
+    "description": "Founded in 2009 in Clare, Michigan. Over 17 years building bipolar lead battery technology with 54+ patents, 6 global licensees, and a 99% recyclable product.",
+    "og_title": "About - Advanced Battery Concepts",
+    "og_description": "Since 2009, building what others said could not be done. 54+ patents. 6 global licensees. Clare, Michigan."
+  },
+  "active_nav": "about",
+  "hero": {
+    "label": "About Advanced Battery Concepts",
+    "title": "Over 17 Years Building What Others Said Could Not Be Done",
+    "desc": "Founded in 2009 in Clare, Michigan, Advanced Battery Concepts has spent over a decade and a half proving that bipolar lead battery technology can outperform lithium-ion in the applications that matter most: critical infrastructure in the world's harshest environments."
+  },
+  "stats": [
+    { "value": "2009", "label": "Founded" },
+    { "value": "54+", "label": "Granted Patents" },
+    { "value": "6", "label": "Global Licensees" },
+    { "value": "99%", "label": "Lead Recycling Rate" }
+  ],
+  "timeline": {
+    "label": "Company History",
+    "title": "Key Milestones",
+    "items": [
+      {
+        "year": "2009",
+        "text": "<strong>Dr. Edward O. Shaffer II founds Advanced Battery Concepts</strong> in Clare, Michigan with a vision to commercialize bipolar lead battery technology for large-format energy storage applications."
+      },
+      {
+        "year": "2012",
+        "text": "<strong>First GreenSeal&reg; prototype validated,</strong> proving that bipolar lead architecture could achieve the energy density, cycle life, and temperature performance required for critical infrastructure deployment."
+      },
+      {
+        "year": "2015",
+        "text": "<strong>Key patents granted for bipolar architecture,</strong> securing foundational intellectual property protection for ABC's cell design, sealing technology, and manufacturing processes."
+      },
+      {
+        "year": "2018",
+        "text": "<strong>Manufacturing 4.0 facility established.</strong> Automated production lines for GreenSeal&reg; batteries at the Clare, Michigan headquarters, enabling consistent quality at commercial scale."
+      },
+      {
+        "year": "2020",
+        "text": "<strong>EverGreenSeal&trade; platform launched.</strong> Next-generation bipolar lead technology engineered specifically for utility-scale and long-duration energy storage applications."
+      },
+      {
+        "year": "2023",
+        "text": "<strong>6 global manufacturing licensees signed,</strong> extending ABC's bipolar lead technology to manufacturing partners across multiple continents and markets."
+      },
+      {
+        "year": "2025",
+        "text": "<strong>Commercial-scale Battery Barn program initiated.</strong> Modular, phased-deployment energy storage systems for municipal utilities and grid infrastructure operators."
+      }
+    ]
+  },
+  "ip_portfolio": {
+    "label": "Intellectual Property",
+    "title": "A Portfolio Built to Protect",
+    "desc": "ABC's intellectual property portfolio represents over 17 years of continuous research, development, and engineering, creating barriers to entry that protect our technology and our partners' investments.",
+    "stats": [
+      { "value": "54+", "label": "Granted Patents" },
+      { "value": "60+", "label": "Pending Patents" },
+      { "value": "45+", "label": "Trade Secrets" },
+      { "value": "10", "label": "Global Geographies" }
+    ]
+  },
+  "manufacturing": {
+    "label": "Manufacturing",
+    "title": "Built in Michigan. Sourced Domestically.",
+    "desc": "ABC's manufacturing headquarters in Clare, Michigan houses automated GreenSeal&reg; production lines with domestically sourced materials. Zero Foreign Entity of Concern supply chain risk. Full ITC domestic content eligibility.",
+    "heading": "Clare, Michigan Facility",
+    "text_1": "Our Manufacturing 4.0 facility in Clare, Michigan is purpose-built for bipolar lead battery production. Automated stacking, sealing, and filling processes ensure consistent quality across every module that leaves the line.",
+    "text_2": "Domestic sourcing of all critical materials eliminates the supply chain vulnerabilities and FEOC concerns that plague lithium-ion manufacturers dependent on overseas mineral processing.",
+    "list_items": [
+      "Automated GreenSeal&reg; production lines",
+      "Domestically sourced lead and materials",
+      "Zero FEOC supply chain risk",
+      "ITC domestic content eligible"
+    ],
+    "image_src": "./assets/tech-battery.png",
+    "image_alt": "ABC manufacturing facility producing bipolar lead battery modules"
+  },
+  "cta": {
+    "label": "Get Started",
+    "title": "Partner With ABC",
+    "desc": "Whether you are a utility, developer, integrator, or government agency, we are ready to discuss how ABC technology can solve your toughest energy storage challenges.",
+    "cta_primary_text": "Request a Project Assessment",
+    "cta_primary_href": "./contact.html",
+    "cta_secondary_text": "Explore the Technology",
+    "cta_secondary_href": "./technology.html"
+  }
+}

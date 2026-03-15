@@ -1,0 +1,582 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: static/assets
+public_folder: ./assets
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      # =====================================================================
+      # HOME PAGE (index.json)
+      # =====================================================================
+      - name: index
+        label: Home Page
+        file: content/index.json
+        fields:
+          - name: meta
+            label: Meta / SEO
+            widget: object
+            fields:
+              - { name: title, label: Page Title, widget: string }
+              - { name: description, label: Meta Description, widget: text }
+              - { name: og_title, label: Open Graph Title, widget: string }
+              - { name: og_description, label: Open Graph Description, widget: text }
+
+          - name: head_extra
+            label: Head Extra (Custom CSS/HTML)
+            widget: text
+
+          - name: hero
+            label: Hero Section
+            widget: object
+            fields:
+              - { name: label, label: Hero Label, widget: string }
+              - { name: title, label: Hero Title, widget: string }
+              - { name: subtitle, label: Hero Subtitle, widget: text }
+              - { name: image_src, label: Hero Image, widget: image }
+              - { name: image_alt, label: Hero Image Alt Text, widget: string }
+              - { name: cta_primary_text, label: Primary CTA Text, widget: string }
+              - { name: cta_primary_href, label: Primary CTA Link, widget: string }
+              - { name: cta_secondary_text, label: Secondary CTA Text, widget: string }
+              - { name: cta_secondary_href, label: Secondary CTA Link, widget: string }
+
+          - name: spec_bar
+            label: Spec Bar
+            widget: list
+            fields:
+              - { name: value, label: Value, widget: string }
+              - { name: label, label: Label, widget: string }
+
+          - name: deployments
+            label: Deployments Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }
+              - name: items
+                label: Deployment Items
+                widget: list
+                fields:
+                  - { name: icon, label: Icon / Number Label, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: desc, label: Description, widget: text }
+
+          - name: environments
+            label: Environments Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - name: items
+                label: Environment Items
+                widget: list
+                fields:
+                  - { name: image_src, label: Image, widget: image }
+                  - { name: image_alt, label: Image Alt Text, widget: string }
+                  - { name: temp, label: Temperature / Condition, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: desc, label: Description, widget: string }
+
+          - name: image_break
+            label: Image Break Section
+            widget: object
+            fields:
+              - { name: image_src, label: Image, widget: image }
+              - { name: image_alt, label: Image Alt Text, widget: string }
+              - { name: quote, label: Quote Text, widget: string }
+
+          - name: comparison
+            label: Comparison Table Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }
+              - name: rows
+                label: Comparison Rows
+                widget: list
+                fields:
+                  - { name: spec, label: Specification, widget: string }
+                  - { name: abc, label: ABC Value, widget: string }
+                  - { name: lithium, label: Lithium Value, widget: string }
+
+          - name: cta
+            label: CTA Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }
+              - { name: cta_primary_text, label: Primary CTA Text, widget: string }
+              - { name: cta_primary_href, label: Primary CTA Link, widget: string }
+              - { name: cta_secondary_text, label: Secondary CTA Text, widget: string }
+              - { name: cta_secondary_href, label: Secondary CTA Link, widget: string }
+
+      # =====================================================================
+      # TECHNOLOGY PAGE (technology.json)
+      # =====================================================================
+      - name: technology
+        label: Technology Page
+        file: content/technology.json
+        fields:
+          - name: meta
+            label: Meta / SEO
+            widget: object
+            fields:
+              - { name: title, label: Page Title, widget: string }
+              - { name: description, label: Meta Description, widget: text }
+              - { name: og_title, label: Open Graph Title, widget: string }
+              - { name: og_description, label: Open Graph Description, widget: text }
+
+          - { name: active_nav, label: Active Nav, widget: hidden }
+
+          - name: hero
+            label: Hero Section
+            widget: object
+            fields:
+              - { name: label, label: Hero Label, widget: string }
+              - { name: title, label: Hero Title, widget: string }
+              - { name: desc, label: Hero Description, widget: text }
+
+          - name: cutaway_image
+            label: Cutaway Image Section
+            widget: object
+            fields:
+              - { name: image_src, label: Image, widget: image }
+              - { name: image_alt, label: Image Alt Text, widget: string }
+              - { name: quote, label: Quote Text, widget: string }
+
+          - name: cees_unit
+            label: CEES Unit Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }
+              - { name: image_src, label: Image, widget: image }
+              - { name: image_alt, label: Image Alt Text, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - { name: text_1, label: Text Paragraph 1, widget: text }
+              - { name: text_2, label: Text Paragraph 2, widget: text }
+              - name: specs
+                label: Specifications
+                widget: list
+                fields:
+                  - { name: value, label: Value, widget: string }
+                  - { name: label, label: Label, widget: text }
+
+          - name: bipolar_architecture
+            label: Bipolar Architecture Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - { name: text_1, label: Text Paragraph 1, widget: text }
+              - { name: text_2, label: Text Paragraph 2, widget: text }
+              - name: list_items
+                label: Feature List
+                widget: list
+                field: { name: item, label: List Item, widget: string }
+              - { name: image_src, label: Image, widget: image }
+              - { name: image_alt, label: Image Alt Text, widget: string }
+
+          - name: proprietary_tech
+            label: Proprietary Technologies Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }
+              - name: items
+                label: Technology Items
+                widget: list
+                fields:
+                  - { name: icon, label: Icon / Category Label, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: desc, label: Description, widget: string }
+
+          - name: scaling
+            label: Deployment Scaling Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - name: items
+                label: Scaling Items
+                widget: list
+                fields:
+                  - { name: icon, label: Icon / Scale Label, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: desc, label: Description, widget: text }
+
+          - name: cta
+            label: CTA Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: cta_primary_text, label: Primary CTA Text, widget: string }
+              - { name: cta_primary_href, label: Primary CTA Link, widget: string }
+              - { name: cta_secondary_text, label: Secondary CTA Text, widget: string }
+              - { name: cta_secondary_href, label: Secondary CTA Link, widget: string }
+
+      # =====================================================================
+      # APPLICATIONS / DEPLOYMENTS PAGE (applications.json)
+      # =====================================================================
+      - name: applications
+        label: Deployments Page
+        file: content/applications.json
+        fields:
+          - name: meta
+            label: Meta / SEO
+            widget: object
+            fields:
+              - { name: title, label: Page Title, widget: string }
+              - { name: description, label: Meta Description, widget: text }
+              - { name: og_title, label: Open Graph Title, widget: string }
+              - { name: og_description, label: Open Graph Description, widget: text }
+
+          - { name: active_nav, label: Active Nav, widget: hidden }
+
+          - name: hero
+            label: Hero Section
+            widget: object
+            fields:
+              - { name: label, label: Hero Label, widget: string }
+              - { name: title, label: Hero Title, widget: string }
+              - { name: desc, label: Hero Description, widget: text }
+
+          - name: deployment_cards
+            label: Deployment Cards
+            widget: list
+            fields:
+              - { name: card_number, label: Card Number, widget: string }
+              - { name: image_src, label: Image, widget: image }
+              - { name: image_alt, label: Image Alt Text, widget: string }
+              - { name: label, label: Card Label, widget: string }
+              - { name: title, label: Card Title, widget: string }
+              - { name: desc, label: Card Description, widget: text }
+              - name: tags
+                label: Tags
+                widget: list
+                field: { name: tag, label: Tag, widget: string }
+              - { name: link_href, label: Link URL, widget: string }
+              - { name: link_text, label: Link Text, widget: string }
+
+          - name: case_study
+            label: Case Study Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - { name: desc, label: Description, widget: text }
+              - name: list_items
+                label: Bullet Points
+                widget: list
+                field: { name: item, label: List Item, widget: string }
+              - { name: image_src, label: Image, widget: image }
+              - { name: image_alt, label: Image Alt Text, widget: string }
+
+          - name: environments
+            label: Environments Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - name: items
+                label: Environment Items
+                widget: list
+                fields:
+                  - { name: image_src, label: Image, widget: image }
+                  - { name: image_alt, label: Image Alt Text, widget: string }
+                  - { name: temp, label: Temperature / Condition, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: desc, label: Description, widget: string }
+
+          - name: cta
+            label: CTA Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: cta_primary_text, label: Primary CTA Text, widget: string }
+              - { name: cta_primary_href, label: Primary CTA Link, widget: string }
+              - { name: cta_secondary_text, label: Secondary CTA Text, widget: string }
+              - { name: cta_secondary_href, label: Secondary CTA Link, widget: string }
+
+      # =====================================================================
+      # BATTERY BARN PAGE (batterybarn.json)
+      # =====================================================================
+      - name: batterybarn
+        label: Battery Barn Page
+        file: content/batterybarn.json
+        fields:
+          - name: meta
+            label: Meta / SEO
+            widget: object
+            fields:
+              - { name: title, label: Page Title, widget: string }
+              - { name: description, label: Meta Description, widget: text }
+              - { name: og_title, label: Open Graph Title, widget: string }
+              - { name: og_description, label: Open Graph Description, widget: text }
+
+          - { name: active_nav, label: Active Nav, widget: hidden }
+
+          - name: hero
+            label: Hero Section
+            widget: object
+            fields:
+              - { name: label, label: Hero Label, widget: string }
+              - { name: title, label: Hero Title, widget: string }
+              - { name: desc, label: Hero Description, widget: text }
+
+          - name: hero_image
+            label: Hero Image Section
+            widget: object
+            fields:
+              - { name: image_src, label: Image, widget: image }
+              - { name: image_alt, label: Image Alt Text, widget: string }
+              - { name: quote, label: Quote Text, widget: string }
+
+          - name: key_specs
+            label: Key Specifications Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - name: items
+                label: Specification Items
+                widget: list
+                fields:
+                  - { name: value, label: Value, widget: string }
+                  - { name: label, label: Label, widget: text }
+
+          - name: architecture
+            label: System Architecture Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - { name: desc, label: Description, widget: text }
+              - name: list_items
+                label: Architecture Details
+                widget: list
+                field: { name: item, label: List Item, widget: string }
+              - { name: image_src, label: Image, widget: image }
+              - { name: image_alt, label: Image Alt Text, widget: string }
+
+          - name: safety
+            label: Safety and Compliance Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - name: items
+                label: Safety Items
+                widget: list
+                fields:
+                  - { name: icon, label: Icon / Number, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: desc, label: Description, widget: text }
+
+          - name: performance
+            label: Performance Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - name: rows
+                label: Performance Rows
+                widget: list
+                fields:
+                  - { name: parameter, label: Parameter, widget: string }
+                  - { name: spec, label: Spec Value, widget: string }
+
+          - name: cost
+            label: Total Cost of Ownership Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - name: items
+                label: Cost Items
+                widget: list
+                fields:
+                  - { name: icon, label: Icon / Category, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: desc, label: Description, widget: text }
+
+          - name: cta
+            label: CTA Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }
+              - { name: cta_primary_text, label: Primary CTA Text, widget: string }
+              - { name: cta_primary_href, label: Primary CTA Link, widget: string }
+              - { name: cta_secondary_text, label: Secondary CTA Text, widget: string }
+              - { name: cta_secondary_href, label: Secondary CTA Link, widget: string }
+
+      # =====================================================================
+      # ABOUT PAGE (about.json)
+      # =====================================================================
+      - name: about
+        label: About Page
+        file: content/about.json
+        fields:
+          - name: meta
+            label: Meta / SEO
+            widget: object
+            fields:
+              - { name: title, label: Page Title, widget: string }
+              - { name: description, label: Meta Description, widget: text }
+              - { name: og_title, label: Open Graph Title, widget: string }
+              - { name: og_description, label: Open Graph Description, widget: text }
+
+          - { name: active_nav, label: Active Nav, widget: hidden }
+
+          - name: hero
+            label: Hero Section
+            widget: object
+            fields:
+              - { name: label, label: Hero Label, widget: string }
+              - { name: title, label: Hero Title, widget: string }
+              - { name: desc, label: Hero Description, widget: text }
+
+          - name: stats
+            label: Stats Bar
+            widget: list
+            fields:
+              - { name: value, label: Value, widget: string }
+              - { name: label, label: Label, widget: string }
+
+          - name: timeline
+            label: Timeline Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - name: items
+                label: Timeline Items
+                widget: list
+                fields:
+                  - { name: year, label: Year, widget: string }
+                  - { name: text, label: Text (HTML allowed), widget: string }
+
+          - name: ip_portfolio
+            label: Intellectual Property Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }
+              - name: stats
+                label: IP Stats
+                widget: list
+                fields:
+                  - { name: value, label: Value, widget: string }
+                  - { name: label, label: Label, widget: string }
+
+          - name: manufacturing
+            label: Manufacturing Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }
+              - { name: heading, label: Heading, widget: string }
+              - { name: text_1, label: Text Paragraph 1, widget: text }
+              - { name: text_2, label: Text Paragraph 2, widget: text }
+              - name: list_items
+                label: Feature List
+                widget: list
+                field: { name: item, label: List Item, widget: string }
+              - { name: image_src, label: Image, widget: image }
+              - { name: image_alt, label: Image Alt Text, widget: string }
+
+          - name: cta
+            label: CTA Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }
+              - { name: cta_primary_text, label: Primary CTA Text, widget: string }
+              - { name: cta_primary_href, label: Primary CTA Link, widget: string }
+              - { name: cta_secondary_text, label: Secondary CTA Text, widget: string }
+              - { name: cta_secondary_href, label: Secondary CTA Link, widget: string }
+
+      # =====================================================================
+      # CONTACT PAGE (contact.json)
+      # =====================================================================
+      - name: contact
+        label: Contact Page
+        file: content/contact.json
+        fields:
+          - name: meta
+            label: Meta / SEO
+            widget: object
+            fields:
+              - { name: title, label: Page Title, widget: string }
+              - { name: description, label: Meta Description, widget: text }
+              - { name: og_title, label: Open Graph Title, widget: string }
+              - { name: og_description, label: Open Graph Description, widget: text }
+
+          - { name: active_nav, label: Active Nav, widget: hidden }
+
+          - name: hero
+            label: Hero Section
+            widget: object
+            fields:
+              - { name: label, label: Hero Label, widget: string }
+              - { name: title, label: Hero Title, widget: string }
+              - { name: desc, label: Hero Description, widget: text }
+
+          - name: contact_info
+            label: Contact Information
+            widget: object
+            fields:
+              - { name: heading, label: Heading, widget: string }
+              - { name: desc, label: Description, widget: text }
+              - { name: address_line1, label: Address Line 1, widget: string }
+              - { name: address_line2, label: Address Line 2, widget: string }
+              - { name: phone, label: Phone Number, widget: string }
+              - { name: web, label: Website, widget: string }
+
+          - name: form
+            label: Contact Form
+            widget: object
+            fields:
+              - { name: name_label, label: Name Field Label, widget: string }
+              - { name: name_placeholder, label: Name Field Placeholder, widget: string }
+              - { name: email_label, label: Email Field Label, widget: string }
+              - { name: email_placeholder, label: Email Field Placeholder, widget: string }
+              - { name: organization_label, label: Organization Field Label, widget: string }
+              - { name: organization_placeholder, label: Organization Field Placeholder, widget: string }
+              - { name: phone_label, label: Phone Field Label, widget: string }
+              - { name: phone_placeholder, label: Phone Field Placeholder, widget: string }
+              - { name: project_type_label, label: Project Type Field Label, widget: string }
+              - { name: project_type_default, label: Project Type Default Text, widget: string }
+              - name: project_types
+                label: Project Type Options
+                widget: list
+                fields:
+                  - { name: value, label: Value, widget: string }
+                  - { name: label, label: Display Label, widget: string }
+              - { name: description_label, label: Description Field Label, widget: string }
+              - { name: description_placeholder, label: Description Field Placeholder, widget: text }
+              - { name: submit_text, label: Submit Button Text, widget: string }
+
+          - name: bottom_note
+            label: Bottom Note Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }

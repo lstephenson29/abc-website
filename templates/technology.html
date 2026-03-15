@@ -1,0 +1,127 @@
+{{> header}}
+
+<!-- MAIN CONTENT -->
+<main id="main">
+
+  <!-- 1. PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label fade-in">{{hero.label}}</p>
+      <h1 class="section-title fade-in">{{hero.title}}</h1>
+      <p class="section-desc fade-in">{{hero.desc}}</p>
+    </div>
+  </section>
+
+  <!-- 2. BIPOLAR CUTAWAY IMAGE -->
+  <div class="image-break fade-in">
+    <img src="{{cutaway_image.image_src}}" alt="{{cutaway_image.image_alt}}" width="1920" height="800" loading="lazy">
+    <div class="image-break-overlay">
+      <blockquote class="image-break-quote image-break-text">{{cutaway_image.quote}}</blockquote>
+    </div>
+  </div>
+
+  <!-- 3. CEES UNIT SPECIFICATIONS -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label fade-in">{{cees_unit.label}}</p>
+      <h2 class="section-title fade-in">{{cees_unit.title}}</h2>
+      <p class="section-desc fade-in">{{cees_unit.desc}}</p>
+
+      <div class="arch-grid" style="margin-bottom:var(--space-12);">
+        <div class="arch-visual fade-in">
+          <img src="{{cees_unit.image_src}}" alt="{{cees_unit.image_alt}}" width="800" height="800" loading="lazy" style="border-radius:var(--radius-lg);">
+        </div>
+        <div class="arch-text fade-in">
+          <h3>{{cees_unit.heading}}</h3>
+          <p>{{cees_unit.text_1}}</p>
+          <p>{{cees_unit.text_2}}</p>
+        </div>
+      </div>
+
+      <div class="tech-specs">
+{{#each cees_unit.specs}}
+        <div class="tech-spec-card fade-in">
+          <div class="spec-value">{{value}}</div>
+          <div class="spec-label">{{label}}</div>
+        </div>
+{{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. BIPOLAR ARCHITECTURE -->
+  <section class="section" style="background:var(--color-surface);">
+    <div class="container">
+      <p class="section-label fade-in">{{bipolar_architecture.label}}</p>
+      <h2 class="section-title fade-in">{{bipolar_architecture.title}}</h2>
+
+      <div class="arch-grid">
+        <div class="arch-text fade-in">
+          <h3>{{bipolar_architecture.heading}}</h3>
+          <p>{{bipolar_architecture.text_1}}</p>
+          <p>{{bipolar_architecture.text_2}}</p>
+          <ul>
+{{#each bipolar_architecture.list_items}}
+            <li>{{this}}</li>
+{{/each}}
+          </ul>
+        </div>
+        <div class="arch-visual fade-in">
+          <img src="{{bipolar_architecture.image_src}}" alt="{{bipolar_architecture.image_alt}}" width="800" height="600" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PROPRIETARY TECHNOLOGIES -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label fade-in">{{proprietary_tech.label}}</p>
+      <h2 class="section-title fade-in">{{proprietary_tech.title}}</h2>
+      <p class="section-desc fade-in">{{proprietary_tech.desc}}</p>
+
+      <div class="features-grid">
+{{#each proprietary_tech.items}}
+        <div class="feature-item fade-in">
+          <div class="feature-icon">{{icon}}</div>
+          <h3 class="feature-title">{{{title}}}</h3>
+          <p class="feature-desc">{{{desc}}}</p>
+        </div>
+{{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SCALING METHODOLOGY -->
+  <section class="section" style="background:var(--color-surface);">
+    <div class="container">
+      <p class="section-label fade-in">{{scaling.label}}</p>
+      <h2 class="section-title fade-in">{{scaling.title}}</h2>
+
+      <div class="features-grid" style="grid-template-columns: repeat(3, 1fr);">
+{{#each scaling.items}}
+        <div class="feature-item fade-in">
+          <div class="feature-icon">{{icon}}</div>
+          <h3 class="feature-title">{{title}}</h3>
+          <p class="feature-desc">{{desc}}</p>
+        </div>
+{{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <p class="section-label fade-in">{{cta.label}}</p>
+      <h2 class="section-title fade-in">{{cta.title}}</h2>
+      <div class="hero-actions" style="justify-content:center;">
+        <a href="{{cta.cta_primary_href}}" class="btn btn--primary">{{cta.cta_primary_text}}</a>
+        <a href="{{cta.cta_secondary_href}}" class="btn btn--outline">{{cta.cta_secondary_text}}</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer}}

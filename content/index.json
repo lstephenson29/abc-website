@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "Advanced Battery Concepts | Critical Infrastructure Energy Storage",
+    "description": "Advanced bipolar lead battery technology built for the hardest environments on Earth. Non-flammable. No HVAC required. Operating range -40 to 55 degrees Celsius. Made in Michigan.",
+    "og_title": "Advanced Battery Concepts | Critical Infrastructure Energy Storage",
+    "og_description": "Non-flammable bipolar lead battery technology for extreme environments. -40 to 55 degrees Celsius. No HVAC. Zero thermal runaway."
+  },
+  "head_extra": "\n<style>\n  @media (max-width: 1024px) {\n    .env-grid--four { grid-template-columns: repeat(2, 1fr) !important; }\n  }\n  @media (max-width: 768px) {\n    .env-grid--four { grid-template-columns: 1fr !important; }\n  }\n</style>",
+  "hero": {
+    "label": "Advanced Bipolar Lead Technology",
+    "title": "Built for the Hardest Environments on Earth",
+    "subtitle": "Non-flammable energy storage that operates from -40 to 55 degrees Celsius without HVAC. Zero thermal runaway. Zero fire risk. 15-year daily cycle life warranty. Designed for critical infrastructure where failure is not an option.",
+    "image_src": "./assets/hero-main.png",
+    "image_alt": "CEES battery storage units deployed at an industrial facility at dusk",
+    "cta_primary_text": "Explore Technology",
+    "cta_primary_href": "./technology.html",
+    "cta_secondary_text": "Request Assessment",
+    "cta_secondary_href": "./contact.html"
+  },
+  "spec_bar": [
+    { "value": "-40 / 55 C", "label": "Operating Range" },
+    { "value": "ZERO", "label": "Thermal Runaway Risk" },
+    { "value": "NO HVAC", "label": "Climate Control Required" },
+    { "value": "48 kWh", "label": "Modular CEES Unit" }
+  ],
+  "deployments": {
+    "label": "Scalable Deployment",
+    "title": "One Modular Unit. Three Ways to Deploy.",
+    "desc": "The CEES 48 kWh cartridge is ABC's core building block. Depending on project scale, it deploys in outdoor-rated enclosures for small installations, BoxBe ISO containers for mid-range projects, or constructed Battery Barn facilities for utility-scale storage.",
+    "items": [
+      {
+        "icon": "01 / Outdoor Enclosures",
+        "title": "Direct Deployment",
+        "desc": "Outdoor-rated NEMA3R/IP55 enclosures linked to wall-mounted inverters. Ideal for remote sites, microgrids, and island infrastructure. As deployed at Manitou Islands National Park."
+      },
+      {
+        "icon": "02 / BoxBe Containers",
+        "title": "Containerized Storage",
+        "desc": "10-foot ISO containers (384 kWh) or 20-foot ISO containers (768 kWh). Pre-integrated, pre-tested, transportable by standard flatbed. Deploy in weeks, not months."
+      },
+      {
+        "icon": "03 / Battery Barn",
+        "title": "Utility-Scale Facility",
+        "desc": "Purpose-built warehouse housing 432 CEES cartridges. 5 MW / 20 MWh in 6,000 square feet. No HVAC. No fire suppression. Where lithium needs 3 to 5 acres, ABC fits in a single building."
+      }
+    ]
+  },
+  "environments": {
+    "label": "Proven Environments",
+    "title": "Where Others Fail, ABC Performs",
+    "items": [
+      {
+        "image_src": "./assets/env-desert.png",
+        "image_alt": "CEES battery storage units operating in extreme desert heat at 55 degrees Celsius",
+        "temp": "55 C / No HVAC",
+        "title": "Desert &amp; Extreme Heat",
+        "desc": "Operates without climate control in conditions that require active cooling for lithium."
+      },
+      {
+        "image_src": "./assets/env-arctic.png",
+        "image_alt": "CEES battery storage units operating in arctic conditions at -40 degrees Celsius",
+        "temp": "-40 C Rated",
+        "title": "Arctic &amp; Sub-Zero",
+        "desc": "Full performance at temperatures that shut down lithium-ion entirely."
+      },
+      {
+        "image_src": "./assets/env-mountain.png",
+        "image_alt": "CEES battery storage units deployed at a remote mountain outpost",
+        "temp": "Remote / Off-Grid",
+        "title": "Mountain &amp; High Altitude",
+        "desc": "Reliable energy storage for remote installations where maintenance access is limited and conditions are harsh."
+      },
+      {
+        "image_src": "./assets/env-tropical.png",
+        "image_alt": "CEES battery storage units deployed on a tropical island coastline",
+        "temp": "Saltwater / Storm Surge",
+        "title": "Tropical &amp; Coastal",
+        "desc": "Non-flammable, flood-survivable energy storage for hurricane corridors and island infrastructure."
+      }
+    ]
+  },
+  "image_break": {
+    "image_src": "./assets/tech-cutaway.png",
+    "image_alt": "Cutaway view of ABC cube-shaped bipolar battery cell showing internal plate architecture",
+    "quote": "54+ Patents. Zero Thermal Runaway. 15-Year Daily Cycle Life Warranty."
+  },
+  "comparison": {
+    "label": "Head-to-Head",
+    "title": "ABC vs. Lithium-Ion: 20-Year Total Cost",
+    "desc": "When you evaluate energy storage for critical infrastructure, the comparison is clear.",
+    "rows": [
+      { "spec": "Fire / Thermal Runaway Risk", "abc": "Zero: non-flammable aqueous chemistry", "lithium": "High: active suppression mandatory" },
+      { "spec": "HVAC Requirement", "abc": "None required", "lithium": "Required: 15-35 C controlled environment" },
+      { "spec": "Ambient Temperature Range", "abc": "-40 C to 55 C", "lithium": "15 C to 35 C (typical)" },
+      { "spec": "Flood / Saltwater Exposure", "abc": "Survives: sealed aqueous system", "lithium": "Catastrophic failure" },
+      { "spec": "Fire Suppression Systems", "abc": "Not needed", "lithium": "Mandatory, significant cost" },
+      { "spec": "Recyclability", "abc": "100%: existing lead infrastructure", "lithium": "Partial: complex, costly processes" },
+      { "spec": "Supply Chain", "abc": "Domestic (Michigan), zero FEOC risk", "lithium": "Global, FEOC concerns" },
+      { "spec": "20-Year Total Cost", "abc": "Lower: no HVAC, no fire suppression", "lithium": "Higher: ongoing maintenance burden" }
+    ]
+  },
+  "cta": {
+    "label": "Get Started",
+    "title": "Your Project Deserves Better Than Lithium",
+    "desc": "Whether you are deploying in a flood zone, an arctic outpost, or a sensitive municipal site, we will show you why ABC is the right technology for hard projects.",
+    "cta_primary_text": "Request a Project Assessment",
+    "cta_primary_href": "./contact.html",
+    "cta_secondary_text": "Read the Technology Brief",
+    "cta_secondary_href": "./technology.html"
+  }
+}

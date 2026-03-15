@@ -1,0 +1,88 @@
+{{> header}}
+
+<!-- MAIN CONTENT -->
+<main id="main">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label fade-in">{{hero.label}}</p>
+      <h1 class="section-title fade-in">{{hero.title}}</h1>
+      <p class="section-desc fade-in">{{hero.desc}}</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <form class="contact-form fade-in" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label for="name">{{form.name_label}}</label>
+            <input type="text" id="name" name="name" placeholder="{{form.name_placeholder}}" required>
+          </div>
+          <div class="form-group">
+            <label for="email">{{form.email_label}}</label>
+            <input type="email" id="email" name="email" placeholder="{{form.email_placeholder}}" required>
+          </div>
+          <div class="form-group">
+            <label for="organization">{{form.organization_label}}</label>
+            <input type="text" id="organization" name="organization" placeholder="{{form.organization_placeholder}}">
+          </div>
+          <div class="form-group">
+            <label for="phone">{{form.phone_label}}</label>
+            <input type="tel" id="phone" name="phone" placeholder="{{form.phone_placeholder}}">
+          </div>
+          <div class="form-group">
+            <label for="project-type">{{form.project_type_label}}</label>
+            <select id="project-type" name="project-type" required>
+              <option value="" disabled selected>{{form.project_type_default}}</option>
+{{#each form.project_types}}
+              <option value="{{value}}">{{label}}</option>
+{{/each}}
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="description">{{form.description_label}}</label>
+            <textarea id="description" name="description" placeholder="{{form.description_placeholder}}" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="align-self:flex-start;">{{form.submit_text}}</button>
+        </form>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info fade-in">
+          <h3>{{contact_info.heading}}</h3>
+          <p>{{contact_info.desc}}</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-label">Address</div>
+            <div class="contact-detail-value">{{{contact_info.address_line1}}}<br>{{{contact_info.address_line2}}}</div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-label">Phone</div>
+            <div class="contact-detail-value">{{contact_info.phone}}</div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-label">Web</div>
+            <div class="contact-detail-value">{{contact_info.web}}</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM NOTE -->
+  <section class="section cta-section">
+    <div class="container">
+      <p class="section-label fade-in">{{bottom_note.label}}</p>
+      <h2 class="section-title fade-in">{{bottom_note.title}}</h2>
+      <p class="section-desc fade-in">{{bottom_note.desc}}</p>
+    </div>
+  </section>
+
+</main>
+
+{{> footer}}

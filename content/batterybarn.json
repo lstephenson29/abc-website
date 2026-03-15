@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Battery Barn | Advanced Battery Concepts",
+    "description": "5 MW / 20 MWh utility-scale energy storage in 6,000 sq ft. No HVAC, no fire suppression, 20-year warranty. ABC Battery Barn.",
+    "og_title": "Battery Barn | Advanced Battery Concepts",
+    "og_description": "5 MW / 20 MWh utility-scale energy storage in 6,000 sq ft. No HVAC, no fire suppression, 20-year warranty. ABC Battery Barn."
+  },
+  "active_nav": "batterybarn",
+  "hero": {
+    "label": "Utility-Scale Deployment",
+    "title": "Battery Barn: 5 MW / 20 MWh in 6,000 Square Feet",
+    "desc": "A purpose-built warehouse facility housing 432 CEES cartridges. No HVAC. No fire suppression. No augmentation. Where lithium-ion demands 3 to 5 acres of outdoor space, ABC delivers the same capacity in a single 6,000 square-foot building."
+  },
+  "hero_image": {
+    "image_src": "./assets/battery-barn-interior.png",
+    "image_alt": "Battery Barn interior rendering showing 432 CEES cartridges stacked 4-high in 6 rows, ventilation ducts and hydrogen sensors on ceiling",
+    "quote": "432 Cartridges. 20 MWh. One Building."
+  },
+  "key_specs": {
+    "label": "Key Specifications",
+    "items": [
+      { "value": "5 MW AC", "label": "Power conversion system output capacity for grid interconnection" },
+      { "value": "20 MWh", "label": "Total energy storage capacity from 432 CEES cartridges at 50.4 kWh each" },
+      { "value": "6,000 sq ft", "label": "Total building footprint. Standard commercial warehouse construction." },
+      { "value": "4-Hour Duration", "label": "Full rated discharge duration at maximum power output" },
+      { "value": "1,152 V DC", "label": "System voltage. 4 cartridges in series per string, 108 strings in parallel." },
+      { "value": "20-Year Warranty", "label": "Full performance warranty with zero augmentation required over lifetime" },
+      { "value": "15-Year", "label": "Daily cycle life warranty. Engineered for one full deep cycle per day for 15 years." }
+    ]
+  },
+  "architecture": {
+    "label": "System Architecture",
+    "heading": "Cartridge Matrix Configuration",
+    "desc": "432 CEES cartridges arranged in a 4-high by 6-row by 18-column matrix. Each cartridge contains 48 GC07481M bipolar lead modules delivering 50.4 kWh at 288V nominal. Cartridges are mechanically fastened to adjacent units with a maximum 4-high stack limit per structural analysis.",
+    "list_items": [
+      "DC System Voltage: 1,152V (4 cartridges in series)",
+      "108 parallel strings for current distribution",
+      "10-foot row spacing for forklift maintenance access",
+      "High-voltage DC electrical room physically separated from battery area"
+    ],
+    "image_src": "./assets/battery-barn-interior.png",
+    "image_alt": "Battery Barn cartridge matrix: 432 CEES units, 4-high by 18-long by 6 rows"
+  },
+  "safety": {
+    "label": "Safety and Compliance",
+    "title": "No HVAC. No Fire Suppression. No Compromise.",
+    "items": [
+      {
+        "icon": "01",
+        "title": "Non-Flammable Chemistry",
+        "desc": "Aqueous sulfuric acid electrolyte absorbed in AGM separators. No organic solvent. No flammable liquid. Zero fire propagation risk. Eliminates NFPA 855 thermal barrier and explosion venting requirements."
+      },
+      {
+        "icon": "02",
+        "title": "Zero Thermal Runaway",
+        "desc": "Lead-acid electrochemistry does not support exothermic thermal runaway. The battery cannot self-heat to ignition. Eliminates the catastrophic failure mode that drives prescriptive requirements for lithium-ion installations."
+      },
+      {
+        "icon": "03",
+        "title": "Standard Construction",
+        "desc": "Deploys in standard commercial warehouse structures. No explosion-rated construction, no fire-rated separation walls, no active suppression systems. Reduces construction cost and accelerates permitting timelines."
+      },
+      {
+        "icon": "04",
+        "title": "Hydrogen Management",
+        "desc": "Sealed VRLA design with flame arrestors on every vent port. Continuous mechanical ventilation maintains hydrogen below 1.0% by volume, well below the 4.0% lower flammability limit."
+      }
+    ]
+  },
+  "performance": {
+    "label": "Performance",
+    "title": "20-Year Performance Guarantee",
+    "rows": [
+      { "parameter": "Round-Trip Efficiency (AC-AC)", "spec": "88%" },
+      { "parameter": "Response Time", "spec": "Less than 1 second" },
+      { "parameter": "Depth of Discharge", "spec": "0 to 100%" },
+      { "parameter": "Maximum Daily Cycles", "spec": "1 (deep cycle)" },
+      { "parameter": "Maximum Annual Cycles", "spec": "360" },
+      { "parameter": "Annual Degradation", "spec": "Less than 0.1% per year" },
+      { "parameter": "Design Life", "spec": "20 years" },
+      { "parameter": "Warranty", "spec": "20 years or 144,000 MWh throughput" },
+      { "parameter": "Daily Cycle Life Warranty", "spec": "15 years" },
+      { "parameter": "Augmentation Required", "spec": "None" },
+      { "parameter": "Recyclability", "spec": "100%, positive residual value at end of life" }
+    ]
+  },
+  "cost": {
+    "label": "Total Cost of Ownership",
+    "title": "20-Year Cost Advantage",
+    "items": [
+      {
+        "icon": "Cost Eliminated",
+        "title": "$0 Augmentation",
+        "desc": "Lithium-ion systems require battery augmentation every 7 to 10 years to maintain rated capacity. ABC's less than 0.1% annual degradation eliminates this entirely. Zero augmentation cost over 20 years."
+      },
+      {
+        "icon": "Cost Eliminated",
+        "title": "$0 HVAC and Fire Suppression",
+        "desc": "No chillers. No heaters. No active fire suppression systems. No annual maintenance contracts for climate control or suppression equipment. These avoided costs compound over the life of the project."
+      }
+    ]
+  },
+  "cta": {
+    "label": "Get Started",
+    "title": "Evaluate Battery Barn for Your Project",
+    "desc": "Our engineering team will assess your site requirements, load profile, and interconnection constraints to determine if a Battery Barn deployment is the right fit.",
+    "cta_primary_text": "Request a Project Assessment",
+    "cta_primary_href": "./contact.html",
+    "cta_secondary_text": "Explore the Technology",
+    "cta_secondary_href": "./technology.html"
+  }
+}

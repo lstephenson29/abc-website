@@ -1,0 +1,104 @@
+{{> header}}
+
+<!-- MAIN CONTENT -->
+<main id="main">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label fade-in">{{hero.label}}</p>
+      <h1 class="section-title fade-in">{{hero.title}}</h1>
+      <p class="section-desc fade-in">{{hero.desc}}</p>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid">
+{{#each stats}}
+        <div class="stat-card fade-in">
+          <div class="stat-value">{{value}}</div>
+          <div class="stat-label">{{label}}</div>
+        </div>
+{{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section" style="background:var(--color-surface);">
+    <div class="container">
+      <p class="section-label fade-in">{{timeline.label}}</p>
+      <h2 class="section-title fade-in">{{timeline.title}}</h2>
+
+      <div class="timeline">
+{{#each timeline.items}}
+        <div class="timeline-item fade-in">
+          <div class="timeline-year">{{year}}</div>
+          <div class="timeline-text">{{{text}}}</div>
+        </div>
+{{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- IP PORTFOLIO -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label fade-in">{{ip_portfolio.label}}</p>
+      <h2 class="section-title fade-in">{{ip_portfolio.title}}</h2>
+      <p class="section-desc fade-in">{{ip_portfolio.desc}}</p>
+
+      <div class="stats-grid">
+{{#each ip_portfolio.stats}}
+        <div class="stat-card fade-in">
+          <div class="stat-value">{{value}}</div>
+          <div class="stat-label">{{label}}</div>
+        </div>
+{{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- MANUFACTURING -->
+  <section class="section" style="background:var(--color-surface);">
+    <div class="container">
+      <p class="section-label fade-in">{{manufacturing.label}}</p>
+      <h2 class="section-title fade-in">{{manufacturing.title}}</h2>
+      <p class="section-desc fade-in">{{{manufacturing.desc}}}</p>
+
+      <div class="arch-grid">
+        <div class="arch-text fade-in">
+          <h3>{{manufacturing.heading}}</h3>
+          <p>{{manufacturing.text_1}}</p>
+          <p>{{manufacturing.text_2}}</p>
+          <ul>
+{{#each manufacturing.list_items}}
+            <li>{{{this}}}</li>
+{{/each}}
+          </ul>
+        </div>
+        <div class="arch-visual fade-in">
+          <img src="{{manufacturing.image_src}}" alt="{{manufacturing.image_alt}}" width="800" height="600" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <p class="section-label fade-in">{{cta.label}}</p>
+      <h2 class="section-title fade-in">{{cta.title}}</h2>
+      <p class="section-desc fade-in">{{cta.desc}}</p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a href="{{cta.cta_primary_href}}" class="btn btn--primary">{{cta.cta_primary_text}}</a>
+        <a href="{{cta.cta_secondary_href}}" class="btn btn--outline">{{cta.cta_secondary_text}}</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer}}

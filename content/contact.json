@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Contact - Advanced Battery Concepts",
+    "description": "Contact Advanced Battery Concepts to discuss your energy storage project. Tell us about your deployment environment and let us evaluate whether ABC technology is right for you.",
+    "og_title": "Contact - Advanced Battery Concepts",
+    "og_description": "Tell us about your project. Let us evaluate whether ABC bipolar lead battery technology is right for your deployment environment."
+  },
+  "active_nav": "contact",
+  "hero": {
+    "label": "Contact",
+    "title": "Tell Us About Your Project",
+    "desc": "Let us evaluate whether ABC technology is right for your deployment environment. Describe your project requirements and our engineering team will respond with an initial assessment."
+  },
+  "contact_info": {
+    "heading": "Get in Touch",
+    "desc": "Advanced Battery Concepts is headquartered in Clare, Michigan. Whether you are an early-stage developer evaluating battery technologies or a utility ready to deploy, we welcome the conversation. Describe your project and our team will provide an initial technical assessment.",
+    "address_line1": "8 Consumers Energy Parkway",
+    "address_line2": "Clare, MI 48617",
+    "phone": "(989) 424-6645",
+    "web": "advancedbatteryconcepts.com"
+  },
+  "form": {
+    "name_label": "Name",
+    "name_placeholder": "Your full name",
+    "email_label": "Email",
+    "email_placeholder": "you@organization.com",
+    "organization_label": "Organization",
+    "organization_placeholder": "Company or agency name",
+    "phone_label": "Phone",
+    "phone_placeholder": "+1 (555) 000-0000",
+    "project_type_label": "Project Type",
+    "project_type_default": "Select a project type",
+    "project_types": [
+      { "value": "utility-grid", "label": "Utility / Grid" },
+      { "value": "data-center", "label": "Data Center" },
+      { "value": "military-defense", "label": "Military / Defense" },
+      { "value": "coastal-island", "label": "Coastal / Island" },
+      { "value": "other", "label": "Other" }
+    ],
+    "description_label": "Project Description",
+    "description_placeholder": "Tell us about your project: deployment environment, capacity needs, duration requirements, timeline, and any specific constraints.",
+    "submit_text": "Submit Inquiry"
+  },
+  "bottom_note": {
+    "label": "Response Time",
+    "title": "We Respond Within 2 Business Days",
+    "desc": "Every inquiry receives a response from our engineering team, not a sales bot. We will review your project details and provide an honest assessment of whether ABC technology is the right fit for your specific deployment environment and requirements."
+  }
+}
