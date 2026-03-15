@@ -1,4 +1,83 @@
-{{> header}}
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technology | Advanced Battery Concepts</title>
+<meta name="description" content="GreenSeal and EverGreenSeal bipolar lead battery technology. CEES 48 kWh modular unit. Zero thermal runaway. 54+ patents worldwide.">
+
+<meta property="og:title" content="Technology | Advanced Battery Concepts">
+<meta property="og:description" content="GreenSeal and EverGreenSeal bipolar lead battery technology. CEES 48 kWh modular unit. Zero thermal runaway. 54+ patents worldwide.">
+<meta property="og:type" content="website">
+
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<!-- SKIP LINK -->
+<a href="#main" class="sr-only" style="position:fixed;top:0;left:0;z-index:200;background:var(--color-primary);color:var(--color-text);padding:var(--space-2) var(--space-4);font-size:var(--text-sm);">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
+      <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
+        <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
+      </svg>
+      <div class="logo-text">
+        Advanced Battery<br>Concepts
+      </div>
+    </a>
+    <button class="mobile-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links" role="list">
+        <li><a href="./technology.html" class="active">Technology</a></li>
+        <li><a href="./applications.html">Deployments</a></li>
+        <li><a href="./batterybarn.html">Battery Barn</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li>
+          <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+        </li>
+        <li><a href="./contact.html" class="btn btn--primary">Request Assessment</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <!-- MAIN CONTENT -->
 <main id="main">
@@ -6,45 +85,67 @@
   <!-- 1. PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <p class="section-label fade-in">{{hero.label}}</p>
-      <h1 class="section-title fade-in">{{hero.title}}</h1>
-      <p class="section-desc fade-in">{{hero.desc}}</p>
+      <p class="section-label fade-in">GreenSeal / EverGreenSeal Technology</p>
+      <h1 class="section-title fade-in">Engineered for Environments That Break Lithium</h1>
+      <p class="section-desc fade-in">ABC's bipolar architecture is fundamentally different from conventional battery design. Instead of scaling consumer-grade chemistry, we engineered a platform from the ground up for large-format, mission-critical energy storage where fire risk, extreme temperatures, and environmental exposure are operating conditions, not edge cases.</p>
     </div>
   </section>
 
   <!-- 2. BIPOLAR CUTAWAY IMAGE -->
   <div class="image-break fade-in">
-    <img src="{{cutaway_image.image_src}}" alt="{{cutaway_image.image_alt}}" width="1920" height="800" loading="lazy">
+    <img src="./assets/tech-cutaway.png" alt="Cube-shaped bipolar lead battery cutaway showing internal cell architecture" width="1920" height="800" loading="lazy">
     <div class="image-break-overlay">
-      <blockquote class="image-break-quote image-break-text">{{cutaway_image.quote}}</blockquote>
+      <blockquote class="image-break-quote image-break-text">Bipolar Lead: The Architecture Lithium Cannot Match</blockquote>
     </div>
   </div>
 
   <!-- 3. CEES UNIT SPECIFICATIONS -->
   <section class="section">
     <div class="container">
-      <p class="section-label fade-in">{{cees_unit.label}}</p>
-      <h2 class="section-title fade-in">{{cees_unit.title}}</h2>
-      <p class="section-desc fade-in">{{cees_unit.desc}}</p>
+      <p class="section-label fade-in">CEES 48 kWh Unit</p>
+      <h2 class="section-title fade-in">The Core Building Block</h2>
+      <p class="section-desc fade-in">Every ABC deployment starts with the CEES cartridge. One modular unit that scales from kilowatts to megawatts.</p>
 
       <div class="arch-grid" style="margin-bottom:var(--space-12);">
         <div class="arch-visual fade-in">
-          <img src="{{cees_unit.image_src}}" alt="{{cees_unit.image_alt}}" width="800" height="800" loading="lazy" style="border-radius:var(--radius-lg);">
+          <img src="./assets/cees-unit.png" alt="CEES 48 kWh battery cartridge, cube-shaped steel enclosure with CEES label" width="800" height="800" loading="lazy" style="border-radius:var(--radius-lg);">
         </div>
         <div class="arch-text fade-in">
-          <h3>{{cees_unit.heading}}</h3>
-          <p>{{cees_unit.text_1}}</p>
-          <p>{{cees_unit.text_2}}</p>
+          <h3>CEES 48 kWh Cartridge</h3>
+          <p>The CEES cartridge is a near-cube steel enclosure housing 48 GC07481M bipolar lead modules. 52.3 inches long, 45.8 inches wide, 80 inches tall. 3,550 lbs. IP55/NEMA3R rated. Deploys indoors or outdoors with zero HVAC, zero fire suppression, and zero climate control. Stackable up to 4 units high.</p>
+          <p>Backed by a 20-year performance warranty and a 15-year daily cycle life warranty with zero augmentation required.</p>
         </div>
       </div>
 
       <div class="tech-specs">
-{{#each cees_unit.specs}}
         <div class="tech-spec-card fade-in">
-          <div class="spec-value">{{value}}</div>
-          <div class="spec-label">{{label}}</div>
+          <div class="spec-value">48 kWh</div>
+          <div class="spec-label">Energy capacity per CEES cartridge. 288V nominal, 50.4 kWh total from 48 GC07481M bipolar lead modules.</div>
         </div>
-{{/each}}
+        <div class="tech-spec-card fade-in">
+          <div class="spec-value">-40 to 55 C</div>
+          <div class="spec-label">Ambient operating temperature range with no HVAC, no heaters, no chillers required at any point.</div>
+        </div>
+        <div class="tech-spec-card fade-in">
+          <div class="spec-value">Zero</div>
+          <div class="spec-label">Thermal runaway events. Aqueous electrolyte chemistry makes thermal runaway physically impossible.</div>
+        </div>
+        <div class="tech-spec-card fade-in">
+          <div class="spec-value">IP55 / NEMA3R</div>
+          <div class="spec-label">Environmental protection rating. Indoor or outdoor deployment. UL 1973 certified, UN 2800 classified.</div>
+        </div>
+        <div class="tech-spec-card fade-in">
+          <div class="spec-value">Less than 0.1%/yr</div>
+          <div class="spec-label">Annual capacity degradation. Effectively no measurable fade over the 20-year design life.</div>
+        </div>
+        <div class="tech-spec-card fade-in">
+          <div class="spec-value">15-Year</div>
+          <div class="spec-label">Daily cycle life warranty. Backed by a full 20-year performance warranty with zero augmentation.</div>
+        </div>
+        <div class="tech-spec-card fade-in">
+          <div class="spec-value">3,550 lbs</div>
+          <div class="spec-label">Unit weight. 52.3 inches long, 45.8 inches wide, 80 inches high. Stackable up to 4 units high.</div>
+        </div>
       </div>
     </div>
   </section>
@@ -52,22 +153,23 @@
   <!-- 4. BIPOLAR ARCHITECTURE -->
   <section class="section" style="background:var(--color-surface);">
     <div class="container">
-      <p class="section-label fade-in">{{bipolar_architecture.label}}</p>
-      <h2 class="section-title fade-in">{{bipolar_architecture.title}}</h2>
+      <p class="section-label fade-in">Core Architecture</p>
+      <h2 class="section-title fade-in">Bipolar Architecture Advantage</h2>
 
       <div class="arch-grid">
         <div class="arch-text fade-in">
-          <h3>{{bipolar_architecture.heading}}</h3>
-          <p>{{bipolar_architecture.text_1}}</p>
-          <p>{{bipolar_architecture.text_2}}</p>
+          <h3>How Bipolar Lead Differs</h3>
+          <p>Traditional monopolar batteries connect cells externally using heavy bus bars and complex wiring. Each cell is a separate unit, leading to uneven current distribution, wasted space, and increased resistance. ABC's bipolar architecture stacks cells internally. Each electrode serves as both the positive plate of one cell and the negative plate of the next.</p>
+          <p>This design eliminates intercell connections, reduces internal resistance, and creates a compact, high-voltage module that outperforms monopolar designs in every metric that matters for critical infrastructure.</p>
           <ul>
-{{#each bipolar_architecture.list_items}}
-            <li>{{this}}</li>
-{{/each}}
+            <li>Uniform current density across the entire electrode surface</li>
+            <li>Higher energy density through elimination of intercell hardware</li>
+            <li>Simpler BMS requirements due to inherent cell balancing</li>
+            <li>Lower manufacturing cost via automated stacking processes</li>
           </ul>
         </div>
         <div class="arch-visual fade-in">
-          <img src="{{bipolar_architecture.image_src}}" alt="{{bipolar_architecture.image_alt}}" width="800" height="600" loading="lazy">
+          <img src="./assets/tech-cutaway.png" alt="ABC cube-shaped bipolar battery cell showing internal bipolar plate stacking" width="800" height="600" loading="lazy">
         </div>
       </div>
     </div>
@@ -76,18 +178,31 @@
   <!-- 5. PROPRIETARY TECHNOLOGIES -->
   <section class="section">
     <div class="container">
-      <p class="section-label fade-in">{{proprietary_tech.label}}</p>
-      <h2 class="section-title fade-in">{{proprietary_tech.title}}</h2>
-      <p class="section-desc fade-in">{{proprietary_tech.desc}}</p>
+      <p class="section-label fade-in">Proprietary Technologies</p>
+      <h2 class="section-title fade-in">Protected by 54+ Patents Worldwide</h2>
+      <p class="section-desc fade-in">Every layer of ABC's technology stack is protected intellectual property, from the cell architecture to the manufacturing process.</p>
 
       <div class="features-grid">
-{{#each proprietary_tech.items}}
         <div class="feature-item fade-in">
-          <div class="feature-icon">{{icon}}</div>
-          <h3 class="feature-title">{{{title}}}</h3>
-          <p class="feature-desc">{{{desc}}}</p>
+          <div class="feature-icon">Platform / GreenSeal</div>
+          <h3 class="feature-title">GreenSeal&reg;</h3>
+          <p class="feature-desc">ABC's original bipolar lead battery platform. Validated across thousands of cycles and multiple deployment environments. The foundation for all ABC products.</p>
         </div>
-{{/each}}
+        <div class="feature-item fade-in">
+          <div class="feature-icon">Platform / EverGreenSeal</div>
+          <h3 class="feature-title">EverGreenSeal&trade;</h3>
+          <p class="feature-desc">Next-generation platform for utility-scale and long-duration storage. Enhanced cycle life, higher energy density, and optimized form factors for grid infrastructure and Battery Barn deployments.</p>
+        </div>
+        <div class="feature-item fade-in">
+          <div class="feature-icon">Sealing / ViaLock</div>
+          <h3 class="feature-title">ViaLock&reg;</h3>
+          <p class="feature-desc">Proprietary cell-to-cell sealing technology. Creates hermetic seals between bipolar cells that withstand extreme temperature cycling, mechanical stress, and decades of electrochemical activity.</p>
+        </div>
+        <div class="feature-item fade-in">
+          <div class="feature-icon">Manufacturing / RapidFill</div>
+          <h3 class="feature-title">RapidFill&trade;</h3>
+          <p class="feature-desc">Proprietary electrolyte filling process ensuring consistent, void-free fills across every cell in the bipolar stack. Essential to manufacturing quality and throughput.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -95,17 +210,25 @@
   <!-- 6. SCALING METHODOLOGY -->
   <section class="section" style="background:var(--color-surface);">
     <div class="container">
-      <p class="section-label fade-in">{{scaling.label}}</p>
-      <h2 class="section-title fade-in">{{scaling.title}}</h2>
+      <p class="section-label fade-in">Deployment Scaling</p>
+      <h2 class="section-title fade-in">From 48 kWh to 20 MWh</h2>
 
       <div class="features-grid" style="grid-template-columns: repeat(3, 1fr);">
-{{#each scaling.items}}
         <div class="feature-item fade-in">
-          <div class="feature-icon">{{icon}}</div>
-          <h3 class="feature-title">{{title}}</h3>
-          <p class="feature-desc">{{desc}}</p>
+          <div class="feature-icon">48 kWh / Single Unit</div>
+          <h3 class="feature-title">Single CEES Cartridge</h3>
+          <p class="feature-desc">One CEES cartridge for residential backup, small commercial, or remote monitoring stations.</p>
         </div>
-{{/each}}
+        <div class="feature-item fade-in">
+          <div class="feature-icon">384 to 768 kWh / BoxBe Container</div>
+          <h3 class="feature-title">BoxBe Container</h3>
+          <p class="feature-desc">8 to 16 CEES cartridges in 10-foot or 20-foot ISO containers. Pre-integrated, pre-tested, transport ready.</p>
+        </div>
+        <div class="feature-item fade-in">
+          <div class="feature-icon">20 MWh / Battery Barn</div>
+          <h3 class="feature-title">Battery Barn</h3>
+          <p class="feature-desc">432 cartridges in a 6,000 sq ft warehouse. 5 MW AC output. 4-hour duration. The largest deployment configuration.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -113,15 +236,86 @@
   <!-- 7. CTA -->
   <section class="section cta-section">
     <div class="container">
-      <p class="section-label fade-in">{{cta.label}}</p>
-      <h2 class="section-title fade-in">{{cta.title}}</h2>
+      <p class="section-label fade-in">Get Started</p>
+      <h2 class="section-title fade-in">See How ABC Technology Fits Your Project</h2>
       <div class="hero-actions" style="justify-content:center;">
-        <a href="{{cta.cta_primary_href}}" class="btn btn--primary">{{cta.cta_primary_text}}</a>
-        <a href="{{cta.cta_secondary_href}}" class="btn btn--outline">{{cta.cta_secondary_text}}</a>
+        <a href="./contact.html" class="btn btn--primary">Request Assessment</a>
+        <a href="./applications.html" class="btn btn--outline">View Deployments</a>
       </div>
     </div>
   </section>
 
 </main>
 
-{{> footer}}
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
+        <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:32px;height:32px;">
+          <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
+          <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
+        </svg>
+      </a>
+      <p>Advanced bipolar lead battery technology. Built for the hardest environments on Earth. Manufactured in Clare, Michigan.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Technology</h4>
+      <ul role="list">
+        <li><a href="./technology.html">GreenSeal&reg;</a></li>
+        <li><a href="./technology.html">CEES Platform</a></li>
+        <li><a href="./technology.html">Specifications</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Deployments</h4>
+      <ul role="list">
+        <li><a href="./applications.html">Outdoor Enclosures</a></li>
+        <li><a href="./applications.html">BoxBe Containers</a></li>
+        <li><a href="./batterybarn.html">Battery Barn</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul role="list">
+        <li><a href="./about.html">About ABC</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Advanced Battery Concepts, LLC. All rights reserved. Clare, Michigan.</p>
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=r.getAttribute('data-theme')||'dark';
+  t&&t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';
+    r.setAttribute('data-theme',d);
+    t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');
+    t.innerHTML=d==='dark'?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  });
+})();
+</script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>

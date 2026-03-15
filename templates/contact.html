@@ -1,4 +1,83 @@
-{{> header}}
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Advanced Battery Concepts</title>
+<meta name="description" content="Contact Advanced Battery Concepts to discuss your energy storage project. Tell us about your deployment environment and let us evaluate whether ABC technology is right for you.">
+
+<meta property="og:title" content="Contact - Advanced Battery Concepts">
+<meta property="og:description" content="Tell us about your project. Let us evaluate whether ABC bipolar lead battery technology is right for your deployment environment.">
+<meta property="og:type" content="website">
+
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<!-- SKIP LINK -->
+<a href="#main" class="sr-only" style="position:fixed;top:0;left:0;z-index:200;background:var(--color-primary);color:var(--color-text);padding:var(--space-2) var(--space-4);font-size:var(--text-sm);">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
+      <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
+        <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
+      </svg>
+      <div class="logo-text">
+        Advanced Battery<br>Concepts
+      </div>
+    </a>
+    <button class="mobile-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links" role="list">
+        <li><a href="./technology.html">Technology</a></li>
+        <li><a href="./applications.html">Deployments</a></li>
+        <li><a href="./batterybarn.html">Battery Barn</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+        <li>
+          <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+        </li>
+        <li><a href="./contact.html" class="btn btn--primary">Request Assessment</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <!-- MAIN CONTENT -->
 <main id="main">
@@ -6,9 +85,9 @@
   <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <p class="section-label fade-in">{{hero.label}}</p>
-      <h1 class="section-title fade-in">{{hero.title}}</h1>
-      <p class="section-desc fade-in">{{hero.desc}}</p>
+      <p class="section-label fade-in">Contact</p>
+      <h1 class="section-title fade-in">Tell Us About Your Project</h1>
+      <p class="section-desc fade-in">Let us evaluate whether ABC technology is right for your deployment environment. Describe your project requirements and our engineering team will respond with an initial assessment.</p>
     </div>
   </section>
 
@@ -20,53 +99,55 @@
         <!-- FORM -->
         <form class="contact-form fade-in" onsubmit="event.preventDefault();">
           <div class="form-group">
-            <label for="name">{{form.name_label}}</label>
-            <input type="text" id="name" name="name" placeholder="{{form.name_placeholder}}" required>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
           </div>
           <div class="form-group">
-            <label for="email">{{form.email_label}}</label>
-            <input type="email" id="email" name="email" placeholder="{{form.email_placeholder}}" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@organization.com" required>
           </div>
           <div class="form-group">
-            <label for="organization">{{form.organization_label}}</label>
-            <input type="text" id="organization" name="organization" placeholder="{{form.organization_placeholder}}">
+            <label for="organization">Organization</label>
+            <input type="text" id="organization" name="organization" placeholder="Company or agency name">
           </div>
           <div class="form-group">
-            <label for="phone">{{form.phone_label}}</label>
-            <input type="tel" id="phone" name="phone" placeholder="{{form.phone_placeholder}}">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
           </div>
           <div class="form-group">
-            <label for="project-type">{{form.project_type_label}}</label>
+            <label for="project-type">Project Type</label>
             <select id="project-type" name="project-type" required>
-              <option value="" disabled selected>{{form.project_type_default}}</option>
-{{#each form.project_types}}
-              <option value="{{value}}">{{label}}</option>
-{{/each}}
+              <option value="" disabled selected>Select a project type</option>
+              <option value="utility-grid">Utility / Grid</option>
+              <option value="data-center">Data Center</option>
+              <option value="military-defense">Military / Defense</option>
+              <option value="coastal-island">Coastal / Island</option>
+              <option value="other">Other</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="description">{{form.description_label}}</label>
-            <textarea id="description" name="description" placeholder="{{form.description_placeholder}}" rows="5"></textarea>
+            <label for="description">Project Description</label>
+            <textarea id="description" name="description" placeholder="Tell us about your project: deployment environment, capacity needs, duration requirements, timeline, and any specific constraints." rows="5"></textarea>
           </div>
-          <button type="submit" class="btn btn--primary" style="align-self:flex-start;">{{form.submit_text}}</button>
+          <button type="submit" class="btn btn--primary" style="align-self:flex-start;">Submit Inquiry</button>
         </form>
 
         <!-- CONTACT INFO -->
         <div class="contact-info fade-in">
-          <h3>{{contact_info.heading}}</h3>
-          <p>{{contact_info.desc}}</p>
+          <h3>Get in Touch</h3>
+          <p>Advanced Battery Concepts is headquartered in Clare, Michigan. Whether you are an early-stage developer evaluating battery technologies or a utility ready to deploy, we welcome the conversation. Describe your project and our team will provide an initial technical assessment.</p>
 
           <div class="contact-detail">
             <div class="contact-detail-label">Address</div>
-            <div class="contact-detail-value">{{{contact_info.address_line1}}}<br>{{{contact_info.address_line2}}}</div>
+            <div class="contact-detail-value">8 Consumers Energy Parkway<br>Clare, MI 48617</div>
           </div>
           <div class="contact-detail">
             <div class="contact-detail-label">Phone</div>
-            <div class="contact-detail-value">{{contact_info.phone}}</div>
+            <div class="contact-detail-value">(989) 424-6645</div>
           </div>
           <div class="contact-detail">
             <div class="contact-detail-label">Web</div>
-            <div class="contact-detail-value">{{contact_info.web}}</div>
+            <div class="contact-detail-value">advancedbatteryconcepts.com</div>
           </div>
         </div>
 
@@ -77,12 +158,83 @@
   <!-- BOTTOM NOTE -->
   <section class="section cta-section">
     <div class="container">
-      <p class="section-label fade-in">{{bottom_note.label}}</p>
-      <h2 class="section-title fade-in">{{bottom_note.title}}</h2>
-      <p class="section-desc fade-in">{{bottom_note.desc}}</p>
+      <p class="section-label fade-in">Response Time</p>
+      <h2 class="section-title fade-in">We Respond Within 2 Business Days</h2>
+      <p class="section-desc fade-in">Every inquiry receives a response from our engineering team, not a sales bot. We will review your project details and provide an honest assessment of whether ABC technology is the right fit for your specific deployment environment and requirements.</p>
     </div>
   </section>
 
 </main>
 
-{{> footer}}
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
+        <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:32px;height:32px;">
+          <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
+          <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
+        </svg>
+      </a>
+      <p>Advanced bipolar lead battery technology. Built for the hardest environments on Earth. Manufactured in Clare, Michigan.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Technology</h4>
+      <ul role="list">
+        <li><a href="./technology.html">GreenSeal&reg;</a></li>
+        <li><a href="./technology.html">CEES Platform</a></li>
+        <li><a href="./technology.html">Specifications</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Deployments</h4>
+      <ul role="list">
+        <li><a href="./applications.html">Outdoor Enclosures</a></li>
+        <li><a href="./applications.html">BoxBe Containers</a></li>
+        <li><a href="./batterybarn.html">Battery Barn</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul role="list">
+        <li><a href="./about.html">About ABC</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Advanced Battery Concepts, LLC. All rights reserved. Clare, Michigan.</p>
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=r.getAttribute('data-theme')||'dark';
+  t&&t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';
+    r.setAttribute('data-theme',d);
+    t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');
+    t.innerHTML=d==='dark'?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  });
+})();
+</script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>

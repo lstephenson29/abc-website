@@ -1,4 +1,83 @@
-{{> header}}
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deployments | Advanced Battery Concepts</title>
+<meta name="description" content="Three deployment configurations for ABC bipolar lead batteries: outdoor enclosures, BoxBe containers, and Battery Barn utility-scale facilities.">
+
+<meta property="og:title" content="Deployments | Advanced Battery Concepts">
+<meta property="og:description" content="Three deployment configurations for ABC bipolar lead batteries: outdoor enclosures, BoxBe containers, and Battery Barn utility-scale facilities.">
+<meta property="og:type" content="website">
+
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<!-- SKIP LINK -->
+<a href="#main" class="sr-only" style="position:fixed;top:0;left:0;z-index:200;background:var(--color-primary);color:var(--color-text);padding:var(--space-2) var(--space-4);font-size:var(--text-sm);">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
+      <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
+        <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
+      </svg>
+      <div class="logo-text">
+        Advanced Battery<br>Concepts
+      </div>
+    </a>
+    <button class="mobile-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links" role="list">
+        <li><a href="./technology.html">Technology</a></li>
+        <li><a href="./applications.html" class="active">Deployments</a></li>
+        <li><a href="./batterybarn.html">Battery Barn</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li>
+          <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+        </li>
+        <li><a href="./contact.html" class="btn btn--primary">Request Assessment</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <!-- MAIN CONTENT -->
 <main id="main">
@@ -6,9 +85,9 @@
   <!-- PAGE HERO -->
   <section class="page-hero section">
     <div class="container">
-      <p class="section-label fade-in">{{hero.label}}</p>
-      <h1 class="section-title fade-in">{{hero.title}}</h1>
-      <p class="section-desc fade-in">{{hero.desc}}</p>
+      <p class="section-label fade-in">Deployment Methodology</p>
+      <h1 class="section-title fade-in">One Unit. Scale to Any Project.</h1>
+      <p class="section-desc fade-in">The CEES 48 kWh cartridge is ABC's modular building block. Depending on scale, it deploys in three configurations: outdoor-rated enclosures for distributed installations, BoxBe ISO containers for mid-range projects, or constructed Battery Barn facilities for utility-scale storage.</p>
     </div>
   </section>
 
@@ -16,51 +95,86 @@
   <section class="section">
     <div class="container">
 
-{{#each deployment_cards}}
-      <!-- Card {{card_number}}: {{label}} -->
+      <!-- Card 1: Outdoor Enclosures -->
       <div class="app-card-large fade-in">
         <div class="app-card-image">
-          <img src="{{image_src}}" alt="{{image_alt}}" width="800" height="600" loading="lazy">
+          <img src="./assets/cees-unit.png" alt="CEES 48 kWh outdoor-rated enclosure for distributed energy storage deployment" width="800" height="600" loading="lazy">
         </div>
         <div class="app-card-content">
-          <p class="section-label">{{label}}</p>
-          <h3>{{title}}</h3>
-          <p>{{{desc}}}</p>
+          <p class="section-label">Outdoor Enclosures</p>
+          <h3>Direct Deployment for Distributed Sites</h3>
+          <p>CEES units deploy in outdoor-rated NEMA3R/IP55 enclosures, linked to wall-mounted inverters. No building required. Ideal for remote sites, microgrids, island infrastructure, and installations where space is limited or construction is impractical. As deployed at the Manitou Islands project for the National Park Service.</p>
           <div class="app-card-specs">
-{{#each tags}}
-            <span class="app-spec-tag">{{this}}</span>
-{{/each}}
+            <span class="app-spec-tag">NEMA3R/IP55</span>
+            <span class="app-spec-tag">Wall-Mounted Inverters</span>
+            <span class="app-spec-tag">Remote Deployable</span>
+            <span class="app-spec-tag">No Building Required</span>
           </div>
-{{#if link_href}}
-          <div style="margin-top: var(--space-6);">
-            <a href="{{link_href}}" class="btn btn--ghost">{{{link_text}}}</a>
-          </div>
-{{/if}}
         </div>
       </div>
 
-{{/each}}
+      <!-- Card 2: BoxBe Containers -->
+      <div class="app-card-large fade-in">
+        <div class="app-card-image">
+          <img src="./assets/boxbe-container.png" alt="BoxBe 20-foot ISO container with pre-integrated CEES cartridges" width="800" height="600" loading="lazy">
+        </div>
+        <div class="app-card-content">
+          <p class="section-label">BoxBe Containers</p>
+          <h3>Containerized Storage, Ready to Ship</h3>
+          <p>Pre-integrated CEES cartridges housed in standard 10-foot ISO containers (384 kWh) or 20-foot ISO containers (768 kWh). Factory tested, transportable by standard flatbed, and deployable in weeks. Outdoor rated with IP55/NEMA3R protection and greater than 90% round-trip efficiency.</p>
+          <div class="app-card-specs">
+            <span class="app-spec-tag">384 kWh (10ft)</span>
+            <span class="app-spec-tag">768 kWh (20ft)</span>
+            <span class="app-spec-tag">IP55/NEMA3R</span>
+            <span class="app-spec-tag">Pre-Integrated</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Battery Barn -->
+      <div class="app-card-large fade-in">
+        <div class="app-card-image">
+          <img src="./assets/battery-barn-interior.png" alt="Battery Barn interior showing 432 CEES cartridges stacked 4-high in 6 rows, ventilation ducts and hydrogen sensors on ceiling" width="800" height="600" loading="lazy">
+        </div>
+        <div class="app-card-content">
+          <p class="section-label">Battery Barn</p>
+          <h3>Utility-Scale in 6,000 Square Feet</h3>
+          <p>Purpose-built warehouse facility housing 432 CEES cartridges for 5 MW / 20 MWh capacity. No HVAC, no fire suppression, no augmentation. Where lithium-ion demands 3 to 5 acres for equivalent capacity, ABC fits in a single building. 20-year warranty and 15-year daily cycle life warranty with zero augmentation cost.</p>
+          <div class="app-card-specs">
+            <span class="app-spec-tag">5 MW / 20 MWh</span>
+            <span class="app-spec-tag">6,000 sq ft</span>
+            <span class="app-spec-tag">No HVAC</span>
+            <span class="app-spec-tag">20-Year Warranty</span>
+          </div>
+          <div style="margin-top: var(--space-6);">
+            <a href="./batterybarn.html" class="btn btn--ghost">Learn more about Battery Barn &rarr;</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- CASE STUDY: MANITOU ISLANDS -->
   <section class="section" style="background: var(--color-surface);">
     <div class="container">
-      <p class="section-label fade-in">{{case_study.label}}</p>
-      <h2 class="section-title fade-in">{{case_study.title}}</h2>
+      <p class="section-label fade-in">Proven Deployment</p>
+      <h2 class="section-title fade-in">Manitou Islands, National Park Service</h2>
 
       <div class="arch-grid">
         <div class="arch-text fade-in">
-          <h3>{{case_study.heading}}</h3>
-          <p>{{case_study.desc}}</p>
+          <h3>72 kW / 288 kWh Off-Grid System</h3>
+          <p>Deployed for the United States Federal Government at Sleeping Bear Dunes National Shoreline. CEES outdoor enclosures with wall-mounted inverters powering all island infrastructure. Balanced three-phase 208V system configuration with two inverters per phase. Continuous power delivery in a remote, environmentally sensitive location.</p>
           <ul>
-{{#each case_study.list_items}}
-            <li>{{this}}</li>
-{{/each}}
+            <li>National Park Service, Sleeping Bear Dunes National Shoreline</li>
+            <li>72 kW / 288 kWh off-grid configuration</li>
+            <li>Balanced three-phase 208V output</li>
+            <li>Two inverters per phase, six total</li>
+            <li>Remote island deployment, no grid connection</li>
           </ul>
         </div>
         <div class="arch-visual fade-in">
-          <img src="{{case_study.image_src}}" alt="{{case_study.image_alt}}" width="800" height="600" loading="lazy">
+          <img src="./assets/env-tropical.png" alt="CEES battery storage units deployed on tropical island for National Park Service" width="800" height="600" loading="lazy">
         </div>
       </div>
     </div>
@@ -69,37 +183,136 @@
   <!-- ENVIRONMENTS GRID -->
   <section>
     <div class="container section--tight">
-      <p class="section-label fade-in">{{environments.label}}</p>
-      <h2 class="section-title fade-in">{{environments.title}}</h2>
+      <p class="section-label fade-in">Operating Environments</p>
+      <h2 class="section-title fade-in">Engineered for Extremes</h2>
     </div>
     <div class="env-grid" style="grid-template-columns: repeat(4, 1fr);">
-{{#each environments.items}}
       <div class="env-card fade-in">
-        <img src="{{image_src}}" alt="{{image_alt}}" width="800" height="600" loading="lazy">
+        <img src="./assets/env-desert.png" alt="CEES battery storage units operating in extreme desert heat at 55 degrees Celsius" width="800" height="600" loading="lazy">
         <div class="env-card-overlay">
           <div class="env-card-overlay-text">
-            <p class="env-card-temp">{{{temp}}}</p>
-            <h3 class="env-card-title">{{{title}}}</h3>
-            <p class="env-card-desc">{{desc}}</p>
+            <p class="env-card-temp">55°C / No HVAC</p>
+            <h3 class="env-card-title">Desert &amp; Extreme Heat</h3>
+            <p class="env-card-desc">Operates without climate control in conditions that require active cooling for lithium.</p>
           </div>
         </div>
       </div>
-{{/each}}
+      <div class="env-card fade-in">
+        <img src="./assets/env-arctic.png" alt="CEES battery storage units operating in arctic conditions at -40 degrees Celsius" width="800" height="600" loading="lazy">
+        <div class="env-card-overlay">
+          <div class="env-card-overlay-text">
+            <p class="env-card-temp">-40°C Rated</p>
+            <h3 class="env-card-title">Arctic &amp; Sub-Zero</h3>
+            <p class="env-card-desc">Full performance at temperatures that shut down lithium-ion entirely.</p>
+          </div>
+        </div>
+      </div>
+      <div class="env-card fade-in">
+        <img src="./assets/env-mountain.png" alt="CEES battery storage units deployed at a remote mountain outpost" width="800" height="600" loading="lazy">
+        <div class="env-card-overlay">
+          <div class="env-card-overlay-text">
+            <p class="env-card-temp">High Altitude</p>
+            <h3 class="env-card-title">Mountain &amp; Remote</h3>
+            <p class="env-card-desc">Reliable storage for high-altitude and difficult-access locations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="env-card fade-in">
+        <img src="./assets/env-tropical.png" alt="CEES battery storage units deployed in tropical island environment" width="800" height="600" loading="lazy">
+        <div class="env-card-overlay">
+          <div class="env-card-overlay-text">
+            <p class="env-card-temp">Saltwater / Humidity</p>
+            <h3 class="env-card-title">Tropical &amp; Coastal</h3>
+            <p class="env-card-desc">Flood-survivable, salt-resistant energy storage for vulnerable coastlines and islands.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="section cta-section">
     <div class="container">
-      <p class="section-label fade-in">{{cta.label}}</p>
-      <h2 class="section-title fade-in">{{cta.title}}</h2>
+      <p class="section-label fade-in">Get Started</p>
+      <h2 class="section-title fade-in">Tell Us About Your Deployment Environment</h2>
       <div class="hero-actions" style="justify-content:center;">
-        <a href="{{cta.cta_primary_href}}" class="btn btn--primary">{{cta.cta_primary_text}}</a>
-        <a href="{{cta.cta_secondary_href}}" class="btn btn--outline">{{cta.cta_secondary_text}}</a>
+        <a href="./contact.html" class="btn btn--primary">Request Assessment</a>
+        <a href="./technology.html" class="btn btn--outline">Explore Technology</a>
       </div>
     </div>
   </section>
 
 </main>
 
-{{> footer}}
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
+        <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:32px;height:32px;">
+          <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
+          <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
+        </svg>
+      </a>
+      <p>Advanced bipolar lead battery technology. Built for the hardest environments on Earth. Manufactured in Clare, Michigan.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Technology</h4>
+      <ul role="list">
+        <li><a href="./technology.html">GreenSeal&reg;</a></li>
+        <li><a href="./technology.html">CEES Platform</a></li>
+        <li><a href="./technology.html">Specifications</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Deployments</h4>
+      <ul role="list">
+        <li><a href="./applications.html">Outdoor Enclosures</a></li>
+        <li><a href="./applications.html">BoxBe Containers</a></li>
+        <li><a href="./batterybarn.html">Battery Barn</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul role="list">
+        <li><a href="./about.html">About ABC</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Advanced Battery Concepts, LLC. All rights reserved. Clare, Michigan.</p>
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=r.getAttribute('data-theme')||'dark';
+  t&&t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';
+    r.setAttribute('data-theme',d);
+    t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');
+    t.innerHTML=d==='dark'?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  });
+})();
+</script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
