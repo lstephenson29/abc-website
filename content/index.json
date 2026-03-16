@@ -4,28 +4,28 @@
     "title": "Where Others Fail, ABC Performs",
     "items": [
       {
-        "image_src": "./assets/env-desert.png",
+        "image_src": "assets/scene-outback-community.png",
         "image_alt": "CEES™ battery storage units operating in extreme desert heat at 55 degrees Celsius",
         "temp": "55 C / No HVAC",
         "title": "Desert &amp; Extreme Heat",
         "desc": "Operates without climate control in conditions that require active cooling for lithium."
       },
       {
-        "image_src": "./assets/env-arctic.png",
-        "image_alt": "CEES™ battery storage units operating in arctic conditions at -40 degrees Celsius",
+        "image_src": "assets/env-coastal.png",
+        "image_alt": "CEES™ battery storage units able to operate in arctic storm surge conditions well below freezing temperatures",
         "temp": "-40 C Rated",
         "title": "Arctic &amp; Sub-Zero",
         "desc": "Full performance at temperatures that shut down lithium-ion entirely."
       },
       {
-        "image_src": "./assets/env-mountain.png",
+        "image_src": "assets/deploy-mountain-hybrid.png",
         "image_alt": "CEES™ battery storage units deployed at a remote mountain outpost",
         "temp": "Remote / Off-Grid",
         "title": "Mountain &amp; High Altitude",
         "desc": "Reliable energy storage for remote installations where maintenance access is limited and conditions are harsh."
       },
       {
-        "image_src": "./assets/env-coastal.png",
+        "image_src": "assets/deploy-coastal-storm.png",
         "image_alt": "CEES™ battery storage units deployed in a coastal flood zone",
         "temp": "Saltwater / Storm Surge",
         "title": "Coastal &amp; Flood Zone",
