@@ -30,7 +30,7 @@
   "cutaway_image": {
     "image_src": "./assets/tech-cutaway.png",
     "image_alt": "Cube-shaped bipolar lead battery cutaway showing internal cell architecture",
-    "quote": "54+ Patents. Zero Thermal Runaway. 15-Year Daily Cycle Life Warranty."
+    "quote": "85+ Patents. Zero Thermal Runaway. 15-Year Daily Cycle Life Warranty."
   },
   "cta": {
     "label": "Get Started",
@@ -41,7 +41,7 @@
     "cta_secondary_href": "./applications.html"
   },
   "cees_unit": {
-    "image_src": "assets/untitled-design-2-.svg",
+    "image_src": "assets/cell-depiction-edited.png",
     "text_2": "Backed by a 15-year daily cycle life warranty with zero augmentation required. 20-25 year design life with majority of microgrid use cases.",
     "heading": "CEES™ 48 kWh Cartridge",
     "image_alt": "CEES™ 48 kWh battery cartridge, cube-shaped steel enclosure with CEES label",
@@ -88,7 +88,7 @@
   },
   "proprietary_tech": {
     "label": "Proprietary Technologies",
-    "title": "Protected by 54+ Patents Worldwide",
+    "title": "Protected by 85+ Patents Worldwide",
     "desc": "Every layer of ABC's technology stack is protected intellectual property, from the cell architecture to the manufacturing process.",
     "items": [
       {
