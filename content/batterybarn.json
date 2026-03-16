@@ -117,7 +117,7 @@
       "10-foot row spacing for forklift maintenance access",
       "High-voltage DC electrical room physically separated from battery area"
     ],
-    "image_src": "assets/aerial-footprint.png",
+    "image_src": "assets/battery-barn-interior.png",
     "image_alt": "432 CEES™ units, 4-high by 18-long by 6 rows in 6,000 Commercial Building"
   },
   "hero_image": {
@@ -167,7 +167,7 @@
     "label": "Restrained Land Resources",
     "title": "20 MWh on 0.2 Acres",
     "desc": "Land is the constraint that kills most utility-scale storage projects. Permitting delays, environmental setbacks, community opposition, and real estate costs all scale with acreage. The ABC Battery Barn eliminates this bottleneck entirely. 20 MWh consolidates into a single 6,000 sq ft commercial building that can be sited directly adjacent to the substation, on existing industrial parcels, or in urban infill locations where 3 to 5 acres of lithium-ion pad space simply does not exist. No fire setbacks. No blast-rated exclusion zones. No HVAC equipment yards. The result is a deployment that fits where others cannot.",
-    "image_src": "assets/generated-image-edited.png",
+    "image_src": "assets/aerial-footprint.png",
     "image_alt": "Aerial view comparing ABC Battery Barn 0.2 acre footprint versus lithium-ion 3 to 5 acre requirement"
   }
 }
