@@ -22,14 +22,14 @@
         "image_alt": "CEES™ battery storage units deployed at a remote mountain outpost",
         "temp": "Remote / Off-Grid",
         "title": "Mountain &amp; High Altitude",
-        "desc": "Reliable energy storage for remote installations where maintenance access is limited and conditions are harsh."
+        "desc": "Reliable energy storage for remote installations "
       },
       {
         "image_src": "assets/deploy-coastal-storm.png",
         "image_alt": "CEES™ battery storage units deployed in a coastal flood zone",
         "temp": "Saltwater / Storm Surge",
         "title": "Coastal &amp; Flood Zone",
-        "desc": "Non-flammable, flood-survivable energy storage for hurricane corridors and island infrastructure."
+        "desc": " "
       }
     ]
   },
