@@ -11,22 +11,29 @@
     "title": "Built for the Hardest Environments on Earth",
     "subtitle": "Non-flammable energy storage that operates from -40 to 55 degrees Celsius without HVAC. Zero thermal runaway. Zero fire risk. 15-year daily cycle life warranty. Designed for critical infrastructure where failure is not an option.",
     "image_src": "./assets/hero-main.png",
-    "image_alt": "CEES battery storage units deployed at an industrial facility at dusk",
+    "image_alt": "ABC BoxBe containers and CEES\u2122 units deployed along a cold Lake Superior coastline at dusk",
     "cta_primary_text": "Explore Technology",
     "cta_primary_href": "./technology.html",
     "cta_secondary_text": "Request Assessment",
     "cta_secondary_href": "./contact.html"
   },
+  "microgrid": {
+    "image_src": "./assets/hero-microgrid.png",
+    "image_alt": "ABC BoxBe containers powering a solar microgrid in the Australian outback",
+    "label": "Microgrid Ready",
+    "title": "The Foundation for Off-Grid Power",
+    "desc": "ABC energy storage paired with solar provides reliable, non-flammable backup for remote outposts, island communities, and distributed infrastructure. No HVAC. No fire suppression. Just power."
+  },
   "spec_bar": [
     { "value": "-40 / 55 C", "label": "Operating Range" },
     { "value": "ZERO", "label": "Thermal Runaway Risk" },
     { "value": "NO HVAC", "label": "Climate Control Required" },
-    { "value": "48 kWh", "label": "Modular CEES Unit" }
+    { "value": "48 kWh", "label": "CEES\u2122 Modular Unit" }
   ],
   "deployments": {
     "label": "Scalable Deployment",
     "title": "One Modular Unit. Three Ways to Deploy.",
-    "desc": "The CEES 48 kWh cartridge is ABC's core building block. Depending on project scale, it deploys in outdoor-rated enclosures for small installations, BoxBe ISO containers for mid-range projects, or constructed Battery Barn facilities for utility-scale storage.",
+    "desc": "The CEES\u2122 48 kWh cartridge is ABC's core building block. Depending on project scale, it deploys in outdoor-rated enclosures for small installations, BoxBe ISO containers for mid-range projects, or constructed Battery Barn facilities for utility-scale storage.",
     "items": [
       {
         "icon": "01 / Outdoor Enclosures",
@@ -41,7 +48,7 @@
       {
         "icon": "03 / Battery Barn",
         "title": "Utility-Scale Facility",
-        "desc": "Purpose-built warehouse housing 432 CEES cartridges. 5 MW / 20 MWh in 6,000 square feet. No HVAC. No fire suppression. Where lithium needs 3 to 5 acres, ABC fits in a single building."
+        "desc": "Purpose-built warehouse housing 432 CEES\u2122 cartridges. 5 MW / 20 MWh in 6,000 square feet. No HVAC. No fire suppression. Where lithium needs 3 to 5 acres, ABC fits in a single building."
       }
     ]
   },
@@ -51,30 +58,30 @@
     "items": [
       {
         "image_src": "./assets/env-desert.png",
-        "image_alt": "CEES battery storage units operating in extreme desert heat at 55 degrees Celsius",
+        "image_alt": "CEES\u2122 battery storage units operating in extreme desert heat at 55 degrees Celsius",
         "temp": "55 C / No HVAC",
         "title": "Desert &amp; Extreme Heat",
         "desc": "Operates without climate control in conditions that require active cooling for lithium."
       },
       {
         "image_src": "./assets/env-arctic.png",
-        "image_alt": "CEES battery storage units operating in arctic conditions at -40 degrees Celsius",
+        "image_alt": "CEES\u2122 battery storage units operating in arctic conditions at -40 degrees Celsius",
         "temp": "-40 C Rated",
         "title": "Arctic &amp; Sub-Zero",
         "desc": "Full performance at temperatures that shut down lithium-ion entirely."
       },
       {
         "image_src": "./assets/env-mountain.png",
-        "image_alt": "CEES battery storage units deployed at a remote mountain outpost",
+        "image_alt": "CEES\u2122 battery storage units deployed at a remote mountain outpost",
         "temp": "Remote / Off-Grid",
         "title": "Mountain &amp; High Altitude",
         "desc": "Reliable energy storage for remote installations where maintenance access is limited and conditions are harsh."
       },
       {
-        "image_src": "./assets/env-tropical.png",
-        "image_alt": "CEES battery storage units deployed on a tropical island coastline",
+        "image_src": "./assets/env-coastal.png",
+        "image_alt": "CEES\u2122 battery storage units deployed in a coastal flood zone",
         "temp": "Saltwater / Storm Surge",
-        "title": "Tropical &amp; Coastal",
+        "title": "Coastal &amp; Flood Zone",
         "desc": "Non-flammable, flood-survivable energy storage for hurricane corridors and island infrastructure."
       }
     ]

@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Technology | Advanced Battery Concepts",
-    "description": "GreenSeal and EverGreenSeal bipolar lead battery technology. CEES 48 kWh modular unit. Zero thermal runaway. 54+ patents worldwide.",
+    "description": "GreenSeal and EverGreenSeal bipolar lead battery technology. CEES\u2122 48 kWh modular unit. Zero thermal runaway. 54+ patents worldwide.",
     "og_title": "Technology | Advanced Battery Concepts",
-    "og_description": "GreenSeal and EverGreenSeal bipolar lead battery technology. CEES 48 kWh modular unit. Zero thermal runaway. 54+ patents worldwide."
+    "og_description": "GreenSeal and EverGreenSeal bipolar lead battery technology. CEES\u2122 48 kWh modular unit. Zero thermal runaway. 54+ patents worldwide."
   },
   "active_nav": "technology",
   "hero": {
@@ -14,24 +14,27 @@
   "cutaway_image": {
     "image_src": "./assets/tech-cutaway.png",
     "image_alt": "Cube-shaped bipolar lead battery cutaway showing internal cell architecture",
-    "quote": "Bipolar Lead: The Architecture Lithium Cannot Match"
+    "quote": "54+ Patents. Zero Thermal Runaway. 15-Year Daily Cycle Life Warranty."
   },
   "cees_unit": {
-    "label": "CEES 48 kWh Unit",
+    "label": "CEES\u2122 48 kWh Unit",
     "title": "The Core Building Block",
-    "desc": "Every ABC deployment starts with the CEES cartridge. One modular unit that scales from kilowatts to megawatts.",
+    "desc": "Every ABC deployment starts with the CEES\u2122 cartridge. One modular unit that scales from kilowatts to megawatts.",
     "image_src": "./assets/cees-unit.png",
-    "image_alt": "CEES 48 kWh battery cartridge, cube-shaped steel enclosure with CEES label",
-    "heading": "CEES 48 kWh Cartridge",
-    "text_1": "The CEES cartridge is a near-cube steel enclosure housing 48 GC07481M bipolar lead modules. 52.3 inches long, 45.8 inches wide, 80 inches tall. 3,550 lbs. IP55/NEMA3R rated. Deploys indoors or outdoors with zero HVAC, zero fire suppression, and zero climate control. Stackable up to 4 units high.",
-    "text_2": "Backed by a 20-year performance warranty and a 15-year daily cycle life warranty with zero augmentation required.",
+    "image_alt": "CEES\u2122 48 kWh battery cartridge, cube-shaped steel enclosure with CEES label",
+    "stacked_image_src": "./assets/cees-stacked-rendering.jpg",
+    "stacked_image_alt": "Two CEES\u2122 units stacked, showing modular deployment configuration",
+    "heading": "CEES\u2122 48 kWh Cartridge",
+    "text_1": "The CEES\u2122 cartridge is a near-cube steel enclosure housing forty-eight 48V bipolar lead modules. 52.3 inches long, 45.8 inches wide, 80 inches tall. 3,550 lbs. IP55/NEMA3R rated. Deploys indoors or outdoors with zero HVAC, zero fire suppression, and zero climate control. Stackable up to 4 units high.",
+    "text_2": "Backed by a 15-year daily cycle life warranty with zero augmentation required. 20-25 year design life with majority of microgrid use cases.",
     "specs": [
-      { "value": "48 kWh", "label": "Energy capacity per CEES cartridge. 288V nominal, 50.4 kWh total from 48 GC07481M bipolar lead modules." },
+      { "value": "48 kWh", "label": "Energy capacity per CEES\u2122 cartridge. Flexible Nominal Voltage options including 48V, 192V, 288V, and 384V, from forty-eight 48V bipolar lead modules." },
       { "value": "-40 to 55 C", "label": "Ambient operating temperature range with no HVAC, no heaters, no chillers required at any point." },
       { "value": "Zero", "label": "Thermal runaway events. Aqueous electrolyte chemistry makes thermal runaway physically impossible." },
       { "value": "IP55 / NEMA3R", "label": "Environmental protection rating. Indoor or outdoor deployment. UL 1973 certified, UN 2800 classified." },
-      { "value": "Less than 0.1%/yr", "label": "Annual capacity degradation. Effectively no measurable fade over the 20-year design life." },
-      { "value": "15-Year", "label": "Daily cycle life warranty. Backed by a full 20-year performance warranty with zero augmentation." },
+      { "value": "Less than 0.1%/yr", "label": "Annual capacity degradation. No measurable fade over the 20-25 year design life." },
+      { "value": "15-Year", "label": "Daily cycle life warranty on current GC battery. Zero augmentation required." },
+      { "value": "20-25 Year", "label": "Design life with majority of microgrid use cases." },
       { "value": "3,550 lbs", "label": "Unit weight. 52.3 inches long, 45.8 inches wide, 80 inches high. Stackable up to 4 units high." }
     ]
   },
@@ -83,18 +86,18 @@
     "items": [
       {
         "icon": "48 kWh / Single Unit",
-        "title": "Single CEES Cartridge",
-        "desc": "One CEES cartridge for residential backup, small commercial, or remote monitoring stations."
+        "title": "Single CEES\u2122 Cartridge",
+        "desc": "One CEES\u2122 cartridge for residential backup, small commercial, or remote monitoring stations."
       },
       {
         "icon": "384 to 768 kWh / BoxBe Container",
         "title": "BoxBe Container",
-        "desc": "8 to 16 CEES cartridges in 10-foot or 20-foot ISO containers. Pre-integrated, pre-tested, transport ready."
+        "desc": "8 to 16 CEES\u2122 cartridges in 10-foot or 20-foot ISO containers. Pre-integrated, pre-tested, transport ready."
       },
       {
         "icon": "20 MWh / Battery Barn",
         "title": "Battery Barn",
-        "desc": "432 cartridges in a 6,000 sq ft warehouse. 5 MW AC output. 4-hour duration. The largest deployment configuration."
+        "desc": "432 CEES\u2122 cartridges in a 6,000 sq ft warehouse. 5 MW AC output. 4-hour duration. The largest deployment configuration."
       }
     ]
   },

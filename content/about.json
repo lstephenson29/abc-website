@@ -1,15 +1,15 @@
 {
   "meta": {
     "title": "About - Advanced Battery Concepts",
-    "description": "Founded in 2009 in Clare, Michigan. Over 17 years building bipolar lead battery technology with 54+ patents, 6 global licensees, and a 99% recyclable product.",
+    "description": "Founded in 2009 in Clare, Michigan. ABC went back to a proven chemistry and innovated forward with bipolar lead battery technology. 54+ patents, 6 global licensees, and a 99% recyclable product.",
     "og_title": "About - Advanced Battery Concepts",
-    "og_description": "Since 2009, building what others said could not be done. 54+ patents. 6 global licensees. Clare, Michigan."
+    "og_description": "We went back to a proven chemistry and innovated forward. 54+ patents. 6 global licensees. Clare, Michigan."
   },
   "active_nav": "about",
   "hero": {
     "label": "About Advanced Battery Concepts",
-    "title": "Over 17 Years Building What Others Said Could Not Be Done",
-    "desc": "Founded in 2009 in Clare, Michigan, Advanced Battery Concepts has spent over a decade and a half proving that bipolar lead battery technology can outperform lithium-ion in the applications that matter most: critical infrastructure in the world's harshest environments."
+    "title": "We Went Back to a Proven Chemistry and Innovated Forward",
+    "desc": "When the industry raced toward lithium, ABC's founders went the other direction. They returned to lead-acid chemistry, the most proven electrochemical platform in history, and reinvented it with bipolar architecture. As technology ages, regulation tightens, and global environments grow increasingly unpredictable, that bet is paying off. Over 17 years of engineering have produced a battery platform built for the conditions that break everything else."
   },
   "stats": [
     { "value": "2009", "label": "Founded" },
@@ -48,6 +48,10 @@
       {
         "year": "2025",
         "text": "<strong>Commercial-scale Battery Barn program initiated.</strong> Modular, phased-deployment energy storage systems for municipal utilities and grid infrastructure operators."
+      },
+      {
+        "year": "2026",
+        "text": "<strong>Bankable, American, non-lithium energy storage systems operational across North America,</strong> while others continue to struggle with lithium-based solutions and unproven chemistries."
       }
     ]
   },

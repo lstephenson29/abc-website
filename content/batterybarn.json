@@ -1,37 +1,37 @@
 {
   "meta": {
     "title": "Battery Barn | Advanced Battery Concepts",
-    "description": "5 MW / 20 MWh utility-scale energy storage in 6,000 sq ft. No HVAC, no fire suppression, 20-year warranty. ABC Battery Barn.",
+    "description": "5 MW / 20 MWh utility-scale energy storage in 6,000 sq ft. No HVAC, no fire suppression, 15-year daily cycle life warranty. ABC Battery Barn.",
     "og_title": "Battery Barn | Advanced Battery Concepts",
-    "og_description": "5 MW / 20 MWh utility-scale energy storage in 6,000 sq ft. No HVAC, no fire suppression, 20-year warranty. ABC Battery Barn."
+    "og_description": "5 MW / 20 MWh utility-scale energy storage in 6,000 sq ft. No HVAC, no fire suppression, 15-year daily cycle life warranty. ABC Battery Barn."
   },
   "active_nav": "batterybarn",
   "hero": {
     "label": "Utility-Scale Deployment",
     "title": "Battery Barn: 5 MW / 20 MWh in 6,000 Square Feet",
-    "desc": "A purpose-built warehouse facility housing 432 CEES cartridges. No HVAC. No fire suppression. No augmentation. Where lithium-ion demands 3 to 5 acres of outdoor space, ABC delivers the same capacity in a single 6,000 square-foot building."
+    "desc": "A purpose-built warehouse facility housing 432 CEES\u2122 cartridges. No HVAC. No fire suppression. No augmentation. Where lithium-ion demands 3 to 5 acres of outdoor space, ABC delivers the same capacity in a single 6,000 square-foot building."
   },
   "hero_image": {
     "image_src": "./assets/battery-barn-interior.png",
-    "image_alt": "Battery Barn interior rendering showing 432 CEES cartridges stacked 4-high in 6 rows, ventilation ducts and hydrogen sensors on ceiling",
+    "image_alt": "Battery Barn interior rendering showing 432 CEES\u2122 cartridges stacked 4-high in 6 rows, ventilation ducts and hydrogen sensors on ceiling",
     "quote": "432 Cartridges. 20 MWh. One Building."
   },
   "key_specs": {
     "label": "Key Specifications",
     "items": [
       { "value": "5 MW AC", "label": "Power conversion system output capacity for grid interconnection" },
-      { "value": "20 MWh", "label": "Total energy storage capacity from 432 CEES cartridges at 50.4 kWh each" },
+      { "value": "20 MWh", "label": "Total energy storage capacity from 432 CEES\u2122 cartridges at 48 kWh each" },
       { "value": "6,000 sq ft", "label": "Total building footprint. Standard commercial warehouse construction." },
       { "value": "4-Hour Duration", "label": "Full rated discharge duration at maximum power output" },
       { "value": "1,152 V DC", "label": "System voltage. 4 cartridges in series per string, 108 strings in parallel." },
-      { "value": "20-Year Warranty", "label": "Full performance warranty with zero augmentation required over lifetime" },
-      { "value": "15-Year", "label": "Daily cycle life warranty. Engineered for one full deep cycle per day for 15 years." }
+      { "value": "15-Year", "label": "Daily cycle life warranty. Engineered for one full deep cycle per day for 15 years." },
+      { "value": "Less than 0.1%/yr", "label": "Capacity fade. No measurable fade over the design life." }
     ]
   },
   "architecture": {
     "label": "System Architecture",
     "heading": "Cartridge Matrix Configuration",
-    "desc": "432 CEES cartridges arranged in a 4-high by 6-row by 18-column matrix. Each cartridge contains 48 GC07481M bipolar lead modules delivering 50.4 kWh at 288V nominal. Cartridges are mechanically fastened to adjacent units with a maximum 4-high stack limit per structural analysis.",
+    "desc": "432 CEES\u2122 cartridges arranged in a 4-high by 6-row by 18-column matrix. Each cartridge contains forty-eight 48V bipolar lead modules delivering 48 kWh with flexible nominal voltage options including 48V, 192V, 288V, and 384V. Cartridges are mechanically fastened to adjacent units with a maximum 4-high stack limit per structural analysis.",
     "list_items": [
       "DC System Voltage: 1,152V (4 cartridges in series)",
       "108 parallel strings for current distribution",
@@ -39,7 +39,14 @@
       "High-voltage DC electrical room physically separated from battery area"
     ],
     "image_src": "./assets/battery-barn-interior.png",
-    "image_alt": "Battery Barn cartridge matrix: 432 CEES units, 4-high by 18-long by 6 rows"
+    "image_alt": "Battery Barn cartridge matrix: 432 CEES\u2122 units, 4-high by 18-long by 6 rows"
+  },
+  "footprint": {
+    "label": "Footprint Comparison",
+    "title": "20 MWh in 0.2 Acres",
+    "desc": "Where lithium-based energy storage requires 3 to 5 acres for equivalent capacity, the ABC Battery Barn consolidates 20 MWh into a single 6,000 sq ft building. Deploy utility-scale storage in restrained space, directly adjacent to the substation.",
+    "image_src": "./assets/aerial-footprint.png",
+    "image_alt": "Aerial view comparing ABC Battery Barn 0.2 acre footprint versus lithium-ion 3 to 5 acre requirement"
   },
   "safety": {
     "label": "Safety and Compliance",
@@ -69,7 +76,7 @@
   },
   "performance": {
     "label": "Performance",
-    "title": "20-Year Performance Guarantee",
+    "title": "Verified Performance Specifications",
     "rows": [
       { "parameter": "Round-Trip Efficiency (AC-AC)", "spec": "88%" },
       { "parameter": "Response Time", "spec": "Less than 1 second" },
@@ -77,8 +84,8 @@
       { "parameter": "Maximum Daily Cycles", "spec": "1 (deep cycle)" },
       { "parameter": "Maximum Annual Cycles", "spec": "360" },
       { "parameter": "Annual Degradation", "spec": "Less than 0.1% per year" },
-      { "parameter": "Design Life", "spec": "20 years" },
-      { "parameter": "Warranty", "spec": "20 years or 144,000 MWh throughput" },
+      { "parameter": "Capacity Fade", "spec": "Less than 0.1%/yr, no measurable fade over design life" },
+      { "parameter": "Design Life", "spec": "20-25 years" },
       { "parameter": "Daily Cycle Life Warranty", "spec": "15 years" },
       { "parameter": "Augmentation Required", "spec": "None" },
       { "parameter": "Recyclability", "spec": "100%, positive residual value at end of life" }

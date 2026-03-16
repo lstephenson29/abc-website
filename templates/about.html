@@ -1,83 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-<!--
-   ______                            __
-  / ____/___  ____ ___  ____  __  __/ /____  _____
- / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
-/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
-\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
-                    /_/
-        Created with Perplexity Computer
-        https://www.perplexity.ai/computer
--->
-
-<!-- Perplexity Computer Attribution — SEO Meta Tags -->
-<meta name="generator" content="Perplexity Computer">
-<meta name="author" content="Perplexity Computer">
-<meta property="og:see_also" content="https://www.perplexity.ai/computer">
-<link rel="author" href="https://www.perplexity.ai/computer">
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - Advanced Battery Concepts</title>
-<meta name="description" content="Founded in 2009 in Clare, Michigan. Over 17 years building bipolar lead battery technology with 54+ patents, 6 global licensees, and a 99% recyclable product.">
-
-<meta property="og:title" content="About - Advanced Battery Concepts">
-<meta property="og:description" content="Since 2009, building what others said could not be done. 54+ patents. 6 global licensees. Clare, Michigan.">
-<meta property="og:type" content="website">
-
-<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="./base.css">
-<link rel="stylesheet" href="./style.css">
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
-<body>
-
-<!-- SKIP LINK -->
-<a href="#main" class="sr-only" style="position:fixed;top:0;left:0;z-index:200;background:var(--color-primary);color:var(--color-text);padding:var(--space-2) var(--space-4);font-size:var(--text-sm);">Skip to content</a>
-
-<!-- HEADER -->
-<header class="site-header">
-  <div class="header-inner">
-    <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
-      <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
-        <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
-      </svg>
-      <div class="logo-text">
-        Advanced Battery<br>Concepts
-      </div>
-    </a>
-    <button class="mobile-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-    <nav>
-      <ul class="nav-links" role="list">
-        <li><a href="./technology.html">Technology</a></li>
-        <li><a href="./applications.html">Deployments</a></li>
-        <li><a href="./batterybarn.html">Battery Barn</a></li>
-        <li><a href="./about.html" class="active">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li>
-          <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          </button>
-        </li>
-        <li><a href="./contact.html" class="btn btn--primary">Request Assessment</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+{{> header}}
 
 <!-- MAIN CONTENT -->
 <main id="main">
@@ -85,9 +6,9 @@
   <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <p class="section-label fade-in">About Advanced Battery Concepts</p>
-      <h1 class="section-title fade-in">Over 17 Years Building What Others Said Could Not Be Done</h1>
-      <p class="section-desc fade-in">Founded in 2009 in Clare, Michigan, Advanced Battery Concepts has spent over a decade and a half proving that bipolar lead battery technology can outperform lithium-ion in the applications that matter most: critical infrastructure in the world's harshest environments.</p>
+      <p class="section-label fade-in">{{hero.label}}</p>
+      <h1 class="section-title fade-in">{{hero.title}}</h1>
+      <p class="section-desc fade-in">{{hero.desc}}</p>
     </div>
   </section>
 
@@ -95,22 +16,12 @@
   <section class="section">
     <div class="container">
       <div class="stats-grid">
+{{#each stats}}
         <div class="stat-card fade-in">
-          <div class="stat-value">2009</div>
-          <div class="stat-label">Founded</div>
+          <div class="stat-value">{{value}}</div>
+          <div class="stat-label">{{label}}</div>
         </div>
-        <div class="stat-card fade-in">
-          <div class="stat-value">54+</div>
-          <div class="stat-label">Granted Patents</div>
-        </div>
-        <div class="stat-card fade-in">
-          <div class="stat-value">6</div>
-          <div class="stat-label">Global Licensees</div>
-        </div>
-        <div class="stat-card fade-in">
-          <div class="stat-value">99%</div>
-          <div class="stat-label">Lead Recycling Rate</div>
-        </div>
+{{/each}}
       </div>
     </div>
   </section>
@@ -118,38 +29,16 @@
   <!-- TIMELINE -->
   <section class="section" style="background:var(--color-surface);">
     <div class="container">
-      <p class="section-label fade-in">Company History</p>
-      <h2 class="section-title fade-in">Key Milestones</h2>
+      <p class="section-label fade-in">{{timeline.label}}</p>
+      <h2 class="section-title fade-in">{{timeline.title}}</h2>
 
       <div class="timeline">
+{{#each timeline.items}}
         <div class="timeline-item fade-in">
-          <div class="timeline-year">2009</div>
-          <div class="timeline-text"><strong>Dr. Edward O. Shaffer II founds Advanced Battery Concepts</strong> in Clare, Michigan with a vision to commercialize bipolar lead battery technology for large-format energy storage applications.</div>
+          <div class="timeline-year">{{year}}</div>
+          <div class="timeline-text">{{{text}}}</div>
         </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-year">2012</div>
-          <div class="timeline-text"><strong>First GreenSeal&reg; prototype validated,</strong> proving that bipolar lead architecture could achieve the energy density, cycle life, and temperature performance required for critical infrastructure deployment.</div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-year">2015</div>
-          <div class="timeline-text"><strong>Key patents granted for bipolar architecture,</strong> securing foundational intellectual property protection for ABC's cell design, sealing technology, and manufacturing processes.</div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-year">2018</div>
-          <div class="timeline-text"><strong>Manufacturing 4.0 facility established.</strong> Automated production lines for GreenSeal&reg; batteries at the Clare, Michigan headquarters, enabling consistent quality at commercial scale.</div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-year">2020</div>
-          <div class="timeline-text"><strong>EverGreenSeal&trade; platform launched.</strong> Next-generation bipolar lead technology engineered specifically for utility-scale and long-duration energy storage applications.</div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-year">2023</div>
-          <div class="timeline-text"><strong>6 global manufacturing licensees signed,</strong> extending ABC's bipolar lead technology to manufacturing partners across multiple continents and markets.</div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-year">2025</div>
-          <div class="timeline-text"><strong>Commercial-scale Battery Barn program initiated.</strong> Modular, phased-deployment energy storage systems for municipal utilities and grid infrastructure operators.</div>
-        </div>
+{{/each}}
       </div>
     </div>
   </section>
@@ -157,27 +46,17 @@
   <!-- IP PORTFOLIO -->
   <section class="section">
     <div class="container">
-      <p class="section-label fade-in">Intellectual Property</p>
-      <h2 class="section-title fade-in">A Portfolio Built to Protect</h2>
-      <p class="section-desc fade-in">ABC's intellectual property portfolio represents over 17 years of continuous research, development, and engineering, creating barriers to entry that protect our technology and our partners' investments.</p>
+      <p class="section-label fade-in">{{ip_portfolio.label}}</p>
+      <h2 class="section-title fade-in">{{ip_portfolio.title}}</h2>
+      <p class="section-desc fade-in">{{ip_portfolio.desc}}</p>
 
       <div class="stats-grid">
+{{#each ip_portfolio.stats}}
         <div class="stat-card fade-in">
-          <div class="stat-value">54+</div>
-          <div class="stat-label">Granted Patents</div>
+          <div class="stat-value">{{value}}</div>
+          <div class="stat-label">{{label}}</div>
         </div>
-        <div class="stat-card fade-in">
-          <div class="stat-value">60+</div>
-          <div class="stat-label">Pending Patents</div>
-        </div>
-        <div class="stat-card fade-in">
-          <div class="stat-value">45+</div>
-          <div class="stat-label">Trade Secrets</div>
-        </div>
-        <div class="stat-card fade-in">
-          <div class="stat-value">10</div>
-          <div class="stat-label">Global Geographies</div>
-        </div>
+{{/each}}
       </div>
     </div>
   </section>
@@ -185,24 +64,23 @@
   <!-- MANUFACTURING -->
   <section class="section" style="background:var(--color-surface);">
     <div class="container">
-      <p class="section-label fade-in">Manufacturing</p>
-      <h2 class="section-title fade-in">Built in Michigan. Sourced Domestically.</h2>
-      <p class="section-desc fade-in">ABC's manufacturing headquarters in Clare, Michigan houses automated GreenSeal&reg; production lines with domestically sourced materials. Zero Foreign Entity of Concern supply chain risk. Full ITC domestic content eligibility.</p>
+      <p class="section-label fade-in">{{manufacturing.label}}</p>
+      <h2 class="section-title fade-in">{{manufacturing.title}}</h2>
+      <p class="section-desc fade-in">{{{manufacturing.desc}}}</p>
 
       <div class="arch-grid">
         <div class="arch-text fade-in">
-          <h3>Clare, Michigan Facility</h3>
-          <p>Our Manufacturing 4.0 facility in Clare, Michigan is purpose-built for bipolar lead battery production. Automated stacking, sealing, and filling processes ensure consistent quality across every module that leaves the line.</p>
-          <p>Domestic sourcing of all critical materials eliminates the supply chain vulnerabilities and FEOC concerns that plague lithium-ion manufacturers dependent on overseas mineral processing.</p>
+          <h3>{{manufacturing.heading}}</h3>
+          <p>{{manufacturing.text_1}}</p>
+          <p>{{manufacturing.text_2}}</p>
           <ul>
-            <li>Automated GreenSeal&reg; production lines</li>
-            <li>Domestically sourced lead and materials</li>
-            <li>Zero FEOC supply chain risk</li>
-            <li>ITC domestic content eligible</li>
+{{#each manufacturing.list_items}}
+            <li>{{{this}}}</li>
+{{/each}}
           </ul>
         </div>
         <div class="arch-visual fade-in">
-          <img src="./assets/tech-battery.png" alt="ABC manufacturing facility producing bipolar lead battery modules" width="800" height="600" loading="lazy">
+          <img src="{{manufacturing.image_src}}" alt="{{manufacturing.image_alt}}" width="800" height="600" loading="lazy">
         </div>
       </div>
     </div>
@@ -211,87 +89,16 @@
   <!-- CTA -->
   <section class="section cta-section">
     <div class="container">
-      <p class="section-label fade-in">Get Started</p>
-      <h2 class="section-title fade-in">Partner With ABC</h2>
-      <p class="section-desc fade-in">Whether you are a utility, developer, integrator, or government agency, we are ready to discuss how ABC technology can solve your toughest energy storage challenges.</p>
+      <p class="section-label fade-in">{{cta.label}}</p>
+      <h2 class="section-title fade-in">{{cta.title}}</h2>
+      <p class="section-desc fade-in">{{cta.desc}}</p>
       <div class="hero-actions" style="justify-content:center;">
-        <a href="./contact.html" class="btn btn--primary">Request a Project Assessment</a>
-        <a href="./technology.html" class="btn btn--outline">Explore the Technology</a>
+        <a href="{{cta.cta_primary_href}}" class="btn btn--primary">{{cta.cta_primary_text}}</a>
+        <a href="{{cta.cta_secondary_href}}" class="btn btn--outline">{{cta.cta_secondary_text}}</a>
       </div>
     </div>
   </section>
 
 </main>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
-        <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:32px;height:32px;">
-          <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
-          <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
-        </svg>
-      </a>
-      <p>Advanced bipolar lead battery technology. Built for the hardest environments on Earth. Manufactured in Clare, Michigan.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Technology</h4>
-      <ul role="list">
-        <li><a href="./technology.html">GreenSeal&reg;</a></li>
-        <li><a href="./technology.html">CEES Platform</a></li>
-        <li><a href="./technology.html">Specifications</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Deployments</h4>
-      <ul role="list">
-        <li><a href="./applications.html">Outdoor Enclosures</a></li>
-        <li><a href="./applications.html">BoxBe Containers</a></li>
-        <li><a href="./batterybarn.html">Battery Barn</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul role="list">
-        <li><a href="./about.html">About ABC</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Advanced Battery Concepts, LLC. All rights reserved. Clare, Michigan.</p>
-    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
-  </div>
-</footer>
-
-<script>
-(function(){
-  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
-  let d=r.getAttribute('data-theme')||'dark';
-  t&&t.addEventListener('click',()=>{
-    d=d==='dark'?'light':'dark';
-    r.setAttribute('data-theme',d);
-    t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');
-    t.innerHTML=d==='dark'?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-  });
-})();
-</script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", function(user) {
-      if (!user) {
-        window.netlifyIdentity.on("login", function() {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-</body>
-</html>
+{{> footer}}

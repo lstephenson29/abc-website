@@ -309,7 +309,7 @@ function cleanBlankLines(text) {
 // PER-PAGE DATA INJECTION
 // ---------------------------------------------------------------------------
 
-function injectPageData(pageName, data) {
+function injectPageData(pageName, data, globals) {
   // Attribution dash: "-" for index and batterybarn, em-dash for others
   data.attribution_dash = HYPHEN_ATTRIBUTION_PAGES.has(pageName) ? '-' : '\u2014';
 
@@ -319,13 +319,26 @@ function injectPageData(pageName, data) {
   // Footer comment
   data.show_footer_comment = !NO_FOOTER_COMMENT_PAGES.has(pageName);
 
-  // Nav active flags
+  // Nav active flags (legacy, kept for compatibility)
   const activeNav = data.active_nav || '';
   data.nav_technology_active = activeNav === 'technology';
   data.nav_applications_active = activeNav === 'applications';
   data.nav_batterybarn_active = activeNav === 'batterybarn';
   data.nav_about_active = activeNav === 'about';
   data.nav_contact_active = activeNav === 'contact';
+
+  // Inject global header/footer data
+  if (globals) {
+    // Deep clone header so we can set _active per page
+    const header = JSON.parse(JSON.stringify(globals.header || {}));
+    if (header.nav_items) {
+      header.nav_items.forEach(function(item) {
+        item._active = (item.nav_key === activeNav);
+      });
+    }
+    data.global_header = header;
+    data.global_footer = globals.footer || {};
+  }
 
   return data;
 }
@@ -363,6 +376,14 @@ function build() {
   // Load partials
   const partials = loadPartials();
 
+  // Load global settings (header, footer)
+  let globals = {};
+  const globalsPath = path.join(CONTENT_DIR, 'globals.json');
+  if (fs.existsSync(globalsPath)) {
+    globals = JSON.parse(fs.readFileSync(globalsPath, 'utf8'));
+    console.log('  OK globals.json');
+  }
+
   // Build each page
   for (const [pageName, outputFile] of Object.entries(PAGES)) {
     const contentPath = path.join(CONTENT_DIR, pageName + '.json');
@@ -381,7 +402,7 @@ function build() {
     const template = fs.readFileSync(templatePath, 'utf8');
 
     // Inject computed per-page variables
-    injectPageData(pageName, data);
+    injectPageData(pageName, data, globals);
 
     // Render
     let html = render(template, data, partials);

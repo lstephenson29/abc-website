@@ -1,19 +1,19 @@
 {
   "meta": {
     "title": "Contact - Advanced Battery Concepts",
-    "description": "Contact Advanced Battery Concepts to discuss your energy storage project. Tell us about your deployment environment and let us evaluate whether ABC technology is right for you.",
+    "description": "Contact Advanced Battery Concepts to discuss your energy storage project. A battery does not die; it is murdered. Tell us about your deployment environment and let us model the right solution.",
     "og_title": "Contact - Advanced Battery Concepts",
-    "og_description": "Tell us about your project. Let us evaluate whether ABC bipolar lead battery technology is right for your deployment environment."
+    "og_description": "Tell us about your project. A battery does not die; it is murdered. Let ABC model the right solution for your deployment environment."
   },
   "active_nav": "contact",
   "hero": {
     "label": "Contact",
     "title": "Tell Us About Your Project",
-    "desc": "Let us evaluate whether ABC technology is right for your deployment environment. Describe your project requirements and our engineering team will respond with an initial assessment."
+    "desc": "A battery does not die; it is murdered. The context of deployment matters significantly for design life beyond our 15-year warranty. Describe your project requirements, and our engineering team will respond with an initial assessment tailored to your specific environment and use case."
   },
   "contact_info": {
-    "heading": "Get in Touch",
-    "desc": "Advanced Battery Concepts is headquartered in Clare, Michigan. Whether you are an early-stage developer evaluating battery technologies or a utility ready to deploy, we welcome the conversation. Describe your project and our team will provide an initial technical assessment.",
+    "heading": "Every Deployment Is Different",
+    "desc": "How a battery is deployed determines how long it lives. Heat, cycling patterns, depth of discharge, and environmental exposure all shape performance over decades. That is why we start every engagement by understanding your use case. ABC offers internal modeling capabilities for ESS deployments behind the meter and in islanded configurations. We can optimize for distributed energy resource needs. Tell us where you are deploying, what load profile you need to support, and what constraints you face. We will model the right solution.",
     "address_line1": "8 Consumers Energy Parkway",
     "address_line2": "Clare, MI 48617",
     "phone": "(989) 424-6645",

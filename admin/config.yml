@@ -6,6 +6,51 @@ media_folder: static/assets
 public_folder: ./assets
 
 collections:
+  # =====================================================================
+  # GLOBAL SETTINGS (header, footer, logo)
+  # =====================================================================
+  - name: settings
+    label: Settings
+    files:
+      - name: globals
+        label: Header & Footer
+        file: content/globals.json
+        fields:
+          - name: header
+            label: Header
+            widget: object
+            fields:
+              - { name: logo_image, label: Logo Image, widget: image, hint: "Upload your logo (SVG or PNG recommended)" }
+              - { name: logo_text, label: Logo Text (HTML), widget: string, hint: "Use <br> for line break. e.g. Advanced Battery<br>Concepts" }
+              - { name: logo_aria_label, label: Logo Accessibility Label, widget: string }
+              - name: nav_items
+                label: Navigation Links
+                widget: list
+                fields:
+                  - { name: label, label: Link Text, widget: string }
+                  - { name: href, label: Link URL, widget: string }
+                  - { name: nav_key, label: Nav Key (for active state), widget: string, hint: "e.g. technology, applications, batterybarn, about, contact" }
+              - { name: cta_text, label: CTA Button Text, widget: string }
+              - { name: cta_href, label: CTA Button Link, widget: string }
+
+          - name: footer
+            label: Footer
+            widget: object
+            fields:
+              - { name: tagline, label: Footer Tagline, widget: text }
+              - name: columns
+                label: Footer Link Columns
+                widget: list
+                fields:
+                  - { name: heading, label: Column Heading, widget: string }
+                  - name: links
+                    label: Links
+                    widget: list
+                    fields:
+                      - { name: label, label: Link Text, widget: string }
+                      - { name: href, label: Link URL, widget: string }
+              - { name: copyright, label: Copyright Text, widget: string }
+
   - name: pages
     label: Pages
     files:
@@ -42,6 +87,16 @@ collections:
               - { name: cta_primary_href, label: Primary CTA Link, widget: string }
               - { name: cta_secondary_text, label: Secondary CTA Text, widget: string }
               - { name: cta_secondary_href, label: Secondary CTA Link, widget: string }
+
+          - name: microgrid
+            label: Microgrid Section
+            widget: object
+            fields:
+              - { name: image_src, label: Image, widget: image }
+              - { name: image_alt, label: Image Alt Text, widget: string }
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }
 
           - name: spec_bar
             label: Spec Bar
@@ -367,6 +422,16 @@ collections:
                 label: Architecture Details
                 widget: list
                 field: { name: item, label: List Item, widget: string }
+              - { name: image_src, label: Image, widget: image }
+              - { name: image_alt, label: Image Alt Text, widget: string }
+
+          - name: footprint
+            label: Footprint / Aerial Section
+            widget: object
+            fields:
+              - { name: label, label: Section Label, widget: string }
+              - { name: title, label: Section Title, widget: string }
+              - { name: desc, label: Section Description, widget: text }
               - { name: image_src, label: Image, widget: image }
               - { name: image_alt, label: Image Alt Text, widget: string }
 

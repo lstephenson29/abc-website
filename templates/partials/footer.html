@@ -3,45 +3,24 @@
 {{/if}}<footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
-        <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:32px;height:32px;">
-          <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
-          <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
-        </svg>
+      <a href="./index.html" class="logo" aria-label="{{global_header.logo_aria_label}}">
+        <img src="{{global_header.logo_image}}" alt="" aria-hidden="true" class="logo-img" style="width:32px;height:32px;">
       </a>
-      <p>Advanced bipolar lead battery technology. Built for the hardest environments on Earth. Manufactured in Clare, Michigan.</p>
+      <p>{{{global_footer.tagline}}}</p>
     </div>
+{{#each global_footer.columns}}
     <div class="footer-col">
-      <h4>Technology</h4>
+      <h4>{{heading}}</h4>
       <ul role="list">
-        <li><a href="./technology.html">GreenSeal&reg;</a></li>
-        <li><a href="./technology.html">CEES Platform</a></li>
-        <li><a href="./technology.html">Specifications</a></li>
+{{#each links}}
+        <li><a href="{{href}}">{{{label}}}</a></li>
+{{/each}}
       </ul>
     </div>
-    <div class="footer-col">
-      <h4>Deployments</h4>
-      <ul role="list">
-        <li><a href="./applications.html">Outdoor Enclosures</a></li>
-        <li><a href="./applications.html">BoxBe Containers</a></li>
-        <li><a href="./batterybarn.html">Battery Barn</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul role="list">
-        <li><a href="./about.html">About ABC</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </div>
+{{/each}}
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2026 Advanced Battery Concepts, LLC. All rights reserved. Clare, Michigan.</p>
+    <p>{{{global_footer.copyright}}}</p>
     <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
   </div>
 </footer>

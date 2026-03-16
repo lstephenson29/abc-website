@@ -46,18 +46,10 @@
 <!-- HEADER -->
 {{/if}}<header class="site-header">
   <div class="header-inner">
-    <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
-      <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
-        <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
-      </svg>
+    <a href="./index.html" class="logo" aria-label="{{global_header.logo_aria_label}}">
+      <img src="{{global_header.logo_image}}" alt="" aria-hidden="true" class="logo-img">
       <div class="logo-text">
-        Advanced Battery<br>Concepts
+        {{{global_header.logo_text}}}
       </div>
     </a>
     <button class="mobile-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
@@ -65,17 +57,15 @@
     </button>
     <nav>
       <ul class="nav-links" role="list">
-        <li><a href="./technology.html"{{#if nav_technology_active}} class="active"{{/if}}>Technology</a></li>
-        <li><a href="./applications.html"{{#if nav_applications_active}} class="active"{{/if}}>Deployments</a></li>
-        <li><a href="./batterybarn.html"{{#if nav_batterybarn_active}} class="active"{{/if}}>Battery Barn</a></li>
-        <li><a href="./about.html"{{#if nav_about_active}} class="active"{{/if}}>About</a></li>
-        <li><a href="./contact.html"{{#if nav_contact_active}} class="active"{{/if}}>Contact</a></li>
+{{#each global_header.nav_items}}
+        <li><a href="{{href}}"{{#if _active}} class="active"{{/if}}>{{label}}</a></li>
+{{/each}}
         <li>
           <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
           </button>
         </li>
-        <li><a href="./contact.html" class="btn btn--primary">Request Assessment</a></li>
+        <li><a href="{{global_header.cta_href}}" class="btn btn--primary">{{global_header.cta_text}}</a></li>
       </ul>
     </nav>
   </div>

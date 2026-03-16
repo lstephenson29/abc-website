@@ -1,132 +1,35 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-<!--
-   ______                            __
-  / ____/___  ____ ___  ____  __  __/ /____  _____
- / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
-/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
-\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
-                    /_/
-        Created with Perplexity Computer
-        https://www.perplexity.ai/computer
--->
-
-<!-- Perplexity Computer Attribution - SEO Meta Tags -->
-<meta name="generator" content="Perplexity Computer">
-<meta name="author" content="Perplexity Computer">
-<meta property="og:see_also" content="https://www.perplexity.ai/computer">
-<link rel="author" href="https://www.perplexity.ai/computer">
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Battery Barn | Advanced Battery Concepts</title>
-<meta name="description" content="5 MW / 20 MWh utility-scale energy storage in 6,000 sq ft. No HVAC, no fire suppression, 20-year warranty. ABC Battery Barn.">
-
-<meta property="og:title" content="Battery Barn | Advanced Battery Concepts">
-<meta property="og:description" content="5 MW / 20 MWh utility-scale energy storage in 6,000 sq ft. No HVAC, no fire suppression, 20-year warranty. ABC Battery Barn.">
-<meta property="og:type" content="website">
-
-<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="./base.css">
-<link rel="stylesheet" href="./style.css">
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
-<body>
-
-<header class="site-header">
-  <div class="header-inner">
-    <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
-      <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-        <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
-        <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
-      </svg>
-      <div class="logo-text">
-        Advanced Battery<br>Concepts
-      </div>
-    </a>
-    <button class="mobile-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-    <nav>
-      <ul class="nav-links" role="list">
-        <li><a href="./technology.html">Technology</a></li>
-        <li><a href="./applications.html">Deployments</a></li>
-        <li><a href="./batterybarn.html" class="active">Battery Barn</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li>
-          <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          </button>
-        </li>
-        <li><a href="./contact.html" class="btn btn--primary">Request Assessment</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+{{> header}}
 
 <main>
 
   <!-- 1. PAGE HERO -->
   <section class="page-hero section">
     <div class="container">
-      <p class="section-label">Utility-Scale Deployment</p>
-      <h1 class="section-title">Battery Barn: 5 MW / 20 MWh in 6,000 Square Feet</h1>
-      <p class="section-desc">A purpose-built warehouse facility housing 432 CEES cartridges. No HVAC. No fire suppression. No augmentation. Where lithium-ion demands 3 to 5 acres of outdoor space, ABC delivers the same capacity in a single 6,000 square-foot building.</p>
+      <p class="section-label">{{hero.label}}</p>
+      <h1 class="section-title">{{hero.title}}</h1>
+      <p class="section-desc">{{hero.desc}}</p>
     </div>
   </section>
 
   <!-- 2. FULL-WIDTH IMAGE -->
   <div class="image-break">
-    <img src="./assets/battery-barn-interior.png" alt="Battery Barn interior rendering showing 432 CEES cartridges stacked 4-high in 6 rows, ventilation ducts and hydrogen sensors on ceiling" loading="lazy">
+    <img src="{{hero_image.image_src}}" alt="{{hero_image.image_alt}}" loading="lazy">
     <div class="image-break-overlay">
-      <p class="image-break-quote">432 Cartridges. 20 MWh. One Building.</p>
+      <p class="image-break-quote">{{hero_image.quote}}</p>
     </div>
   </div>
 
   <!-- 3. KEY SPECIFICATIONS -->
   <section class="section">
     <div class="container">
-      <p class="section-label">Key Specifications</p>
+      <p class="section-label">{{key_specs.label}}</p>
       <div class="tech-specs">
+{{#each key_specs.items}}
         <div class="tech-spec-card">
-          <div class="spec-value">5 MW AC</div>
-          <div class="spec-label">Power conversion system output capacity for grid interconnection</div>
+          <div class="spec-value">{{value}}</div>
+          <div class="spec-label">{{label}}</div>
         </div>
-        <div class="tech-spec-card">
-          <div class="spec-value">20 MWh</div>
-          <div class="spec-label">Total energy storage capacity from 432 CEES cartridges at 50.4 kWh each</div>
-        </div>
-        <div class="tech-spec-card">
-          <div class="spec-value">6,000 sq ft</div>
-          <div class="spec-label">Total building footprint. Standard commercial warehouse construction.</div>
-        </div>
-        <div class="tech-spec-card">
-          <div class="spec-value">4-Hour Duration</div>
-          <div class="spec-label">Full rated discharge duration at maximum power output</div>
-        </div>
-        <div class="tech-spec-card">
-          <div class="spec-value">1,152 V DC</div>
-          <div class="spec-label">System voltage. 4 cartridges in series per string, 108 strings in parallel.</div>
-        </div>
-        <div class="tech-spec-card">
-          <div class="spec-value">20-Year Warranty</div>
-          <div class="spec-label">Full performance warranty with zero augmentation required over lifetime</div>
-        </div>
-        <div class="tech-spec-card">
-          <div class="spec-value">15-Year</div>
-          <div class="spec-label">Daily cycle life warranty. Engineered for one full deep cycle per day for 15 years.</div>
-        </div>
+{{/each}}
       </div>
     </div>
   </section>
@@ -134,51 +37,60 @@
   <!-- 4. SYSTEM ARCHITECTURE -->
   <section class="section">
     <div class="container">
-      <p class="section-label">System Architecture</p>
+      <p class="section-label">{{architecture.label}}</p>
       <div class="arch-grid">
         <div class="arch-text">
-          <h3>Cartridge Matrix Configuration</h3>
-          <p>432 CEES cartridges arranged in a 4-high by 6-row by 18-column matrix. Each cartridge contains 48 GC07481M bipolar lead modules delivering 50.4 kWh at 288V nominal. Cartridges are mechanically fastened to adjacent units with a maximum 4-high stack limit per structural analysis.</p>
+          <h3>{{architecture.heading}}</h3>
+          <p>{{architecture.desc}}</p>
           <ul>
-            <li>DC System Voltage: 1,152V (4 cartridges in series)</li>
-            <li>108 parallel strings for current distribution</li>
-            <li>10-foot row spacing for forklift maintenance access</li>
-            <li>High-voltage DC electrical room physically separated from battery area</li>
+{{#each architecture.list_items}}
+            <li>{{this}}</li>
+{{/each}}
           </ul>
         </div>
         <div class="arch-visual">
-          <img src="./assets/battery-barn-interior.png" alt="Battery Barn cartridge matrix: 432 CEES units, 4-high by 18-long by 6 rows" loading="lazy">
+          <img src="{{architecture.image_src}}" alt="{{architecture.image_alt}}" loading="lazy">
         </div>
       </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-8);margin-top:var(--space-10);">
+        <div class="fade-in">
+          <img src="./assets/cees-installed-real.jpg" alt="Real deployed CEES units stacked 2-high with CEES labels visible" loading="lazy" style="border-radius:var(--radius-lg);width:100%;height:auto;">
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-top:var(--space-3);">CEES&#8482; units deployed and stacked, Manitou Islands installation</p>
+        </div>
+        <div class="fade-in">
+          <img src="./assets/cees-stacked-rendering.jpg" alt="CEES unit rendering showing stacked configuration" loading="lazy" style="border-radius:var(--radius-lg);width:100%;height:auto;">
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-top:var(--space-3);">CEES&#8482; stackable modular design, up to 4-high</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4B. FOOTPRINT / AERIAL -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">{{footprint.label}}</p>
+      <h2 class="section-title">{{footprint.title}}</h2>
+      <p class="section-desc">{{footprint.desc}}</p>
+    </div>
+    <div class="image-break" style="margin-top: var(--space-8);">
+      <img src="{{footprint.image_src}}" alt="{{footprint.image_alt}}" loading="lazy">
     </div>
   </section>
 
   <!-- 5. SAFETY AND COMPLIANCE -->
   <section class="section">
     <div class="container">
-      <p class="section-label">Safety and Compliance</p>
-      <h2 class="section-title">No HVAC. No Fire Suppression. No Compromise.</h2>
+      <p class="section-label">{{safety.label}}</p>
+      <h2 class="section-title">{{safety.title}}</h2>
       <div class="features-grid">
+{{#each safety.items}}
         <div class="feature-item">
-          <div class="feature-icon">01</div>
-          <h3 class="feature-title">Non-Flammable Chemistry</h3>
-          <p class="feature-desc">Aqueous sulfuric acid electrolyte absorbed in AGM separators. No organic solvent. No flammable liquid. Zero fire propagation risk. Eliminates NFPA 855 thermal barrier and explosion venting requirements.</p>
+          <div class="feature-icon">{{icon}}</div>
+          <h3 class="feature-title">{{title}}</h3>
+          <p class="feature-desc">{{desc}}</p>
         </div>
-        <div class="feature-item">
-          <div class="feature-icon">02</div>
-          <h3 class="feature-title">Zero Thermal Runaway</h3>
-          <p class="feature-desc">Lead-acid electrochemistry does not support exothermic thermal runaway. The battery cannot self-heat to ignition. Eliminates the catastrophic failure mode that drives prescriptive requirements for lithium-ion installations.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">03</div>
-          <h3 class="feature-title">Standard Construction</h3>
-          <p class="feature-desc">Deploys in standard commercial warehouse structures. No explosion-rated construction, no fire-rated separation walls, no active suppression systems. Reduces construction cost and accelerates permitting timelines.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">04</div>
-          <h3 class="feature-title">Hydrogen Management</h3>
-          <p class="feature-desc">Sealed VRLA design with flame arrestors on every vent port. Continuous mechanical ventilation maintains hydrogen below 1.0% by volume, well below the 4.0% lower flammability limit.</p>
-        </div>
+{{/each}}
       </div>
     </div>
   </section>
@@ -186,8 +98,8 @@
   <!-- 6. PERFORMANCE TABLE -->
   <section class="section comparison-section">
     <div class="container">
-      <p class="section-label">Performance</p>
-      <h2 class="section-title">20-Year Performance Guarantee</h2>
+      <p class="section-label">{{performance.label}}</p>
+      <h2 class="section-title">{{performance.title}}</h2>
       <table class="comparison-table">
         <thead>
           <tr>
@@ -196,50 +108,12 @@
           </tr>
         </thead>
         <tbody>
+{{#each performance.rows}}
           <tr>
-            <td>Round-Trip Efficiency (AC-AC)</td>
-            <td>88%</td>
+            <td>{{parameter}}</td>
+            <td>{{spec}}</td>
           </tr>
-          <tr>
-            <td>Response Time</td>
-            <td>Less than 1 second</td>
-          </tr>
-          <tr>
-            <td>Depth of Discharge</td>
-            <td>0 to 100%</td>
-          </tr>
-          <tr>
-            <td>Maximum Daily Cycles</td>
-            <td>1 (deep cycle)</td>
-          </tr>
-          <tr>
-            <td>Maximum Annual Cycles</td>
-            <td>360</td>
-          </tr>
-          <tr>
-            <td>Annual Degradation</td>
-            <td>Less than 0.1% per year</td>
-          </tr>
-          <tr>
-            <td>Design Life</td>
-            <td>20 years</td>
-          </tr>
-          <tr>
-            <td>Warranty</td>
-            <td>20 years or 144,000 MWh throughput</td>
-          </tr>
-          <tr>
-            <td>Daily Cycle Life Warranty</td>
-            <td>15 years</td>
-          </tr>
-          <tr>
-            <td>Augmentation Required</td>
-            <td>None</td>
-          </tr>
-          <tr>
-            <td>Recyclability</td>
-            <td>100%, positive residual value at end of life</td>
-          </tr>
+{{/each}}
         </tbody>
       </table>
     </div>
@@ -248,19 +122,16 @@
   <!-- 7. COST ADVANTAGE -->
   <section class="section">
     <div class="container">
-      <p class="section-label">Total Cost of Ownership</p>
-      <h2 class="section-title">20-Year Cost Advantage</h2>
+      <p class="section-label">{{cost.label}}</p>
+      <h2 class="section-title">{{cost.title}}</h2>
       <div class="features-grid">
+{{#each cost.items}}
         <div class="feature-item">
-          <div class="feature-icon">Cost Eliminated</div>
-          <h3 class="feature-title">$0 Augmentation</h3>
-          <p class="feature-desc">Lithium-ion systems require battery augmentation every 7 to 10 years to maintain rated capacity. ABC's less than 0.1% annual degradation eliminates this entirely. Zero augmentation cost over 20 years.</p>
+          <div class="feature-icon">{{icon}}</div>
+          <h3 class="feature-title">{{title}}</h3>
+          <p class="feature-desc">{{desc}}</p>
         </div>
-        <div class="feature-item">
-          <div class="feature-icon">Cost Eliminated</div>
-          <h3 class="feature-title">$0 HVAC and Fire Suppression</h3>
-          <p class="feature-desc">No chillers. No heaters. No active fire suppression systems. No annual maintenance contracts for climate control or suppression equipment. These avoided costs compound over the life of the project.</p>
-        </div>
+{{/each}}
       </div>
     </div>
   </section>
@@ -268,87 +139,16 @@
   <!-- 8. CTA -->
   <section class="section cta-section">
     <div class="container">
-      <p class="section-label">Get Started</p>
-      <h2 class="section-title">Evaluate Battery Barn for Your Project</h2>
-      <p class="section-desc">Our engineering team will assess your site requirements, load profile, and interconnection constraints to determine if a Battery Barn deployment is the right fit.</p>
+      <p class="section-label">{{cta.label}}</p>
+      <h2 class="section-title">{{cta.title}}</h2>
+      <p class="section-desc">{{cta.desc}}</p>
       <div class="hero-actions" style="justify-content: center;">
-        <a href="./contact.html" class="btn btn--primary">Request a Project Assessment</a>
-        <a href="./technology.html" class="btn btn--outline">Explore the Technology</a>
+        <a href="{{cta.cta_primary_href}}" class="btn btn--primary">{{cta.cta_primary_text}}</a>
+        <a href="{{cta.cta_secondary_href}}" class="btn btn--outline">{{cta.cta_secondary_text}}</a>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <a href="./index.html" class="logo" aria-label="Advanced Battery Concepts Home">
-        <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:32px;height:32px;">
-          <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-          <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
-          <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
-        </svg>
-      </a>
-      <p>Advanced bipolar lead battery technology. Built for the hardest environments on Earth. Manufactured in Clare, Michigan.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Technology</h4>
-      <ul role="list">
-        <li><a href="./technology.html">GreenSeal&reg;</a></li>
-        <li><a href="./technology.html">CEES Platform</a></li>
-        <li><a href="./technology.html">Specifications</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Deployments</h4>
-      <ul role="list">
-        <li><a href="./applications.html">Outdoor Enclosures</a></li>
-        <li><a href="./applications.html">BoxBe Containers</a></li>
-        <li><a href="./batterybarn.html">Battery Barn</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul role="list">
-        <li><a href="./about.html">About ABC</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Advanced Battery Concepts, LLC. All rights reserved. Clare, Michigan.</p>
-    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
-  </div>
-</footer>
-
-<script>
-(function(){
-  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
-  let d=r.getAttribute('data-theme')||'dark';
-  t&&t.addEventListener('click',()=>{
-    d=d==='dark'?'light':'dark';
-    r.setAttribute('data-theme',d);
-    t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');
-    t.innerHTML=d==='dark'?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-  });
-})();
-</script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", function(user) {
-      if (!user) {
-        window.netlifyIdentity.on("login", function() {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-
-</body>
-</html>
+{{> footer}}
