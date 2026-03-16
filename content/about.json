@@ -12,10 +12,22 @@
     "desc": "When the industry raced toward lithium, ABC's founders went the other direction. They returned to lead-acid chemistry, the most proven electrochemical platform in history, and reinvented it with bipolar architecture. As technology ages, regulation tightens, and global environments grow increasingly unpredictable, that bet is paying off. Over 17 years of engineering have produced a battery platform built for the conditions that break everything else."
   },
   "stats": [
-    { "value": "2009", "label": "Founded" },
-    { "value": "54+", "label": "Granted Patents" },
-    { "value": "6", "label": "Global Licensees" },
-    { "value": "99%", "label": "Lead Recycling Rate" }
+    {
+      "value": "2009",
+      "label": "Founded"
+    },
+    {
+      "value": "54+",
+      "label": "Granted Patents"
+    },
+    {
+      "value": "6",
+      "label": "Global Licensees"
+    },
+    {
+      "value": "99%",
+      "label": "Lead Recycling Rate"
+    }
   ],
   "timeline": {
     "label": "Company History",
@@ -60,27 +72,39 @@
     "title": "A Portfolio Built to Protect",
     "desc": "ABC's intellectual property portfolio represents over 17 years of continuous research, development, and engineering, creating barriers to entry that protect our technology and our partners' investments.",
     "stats": [
-      { "value": "54+", "label": "Granted Patents" },
-      { "value": "60+", "label": "Pending Patents" },
-      { "value": "45+", "label": "Trade Secrets" },
-      { "value": "10", "label": "Global Geographies" }
+      {
+        "value": "85+",
+        "label": "Granted Patents"
+      },
+      {
+        "value": "60+",
+        "label": "Pending Patents"
+      },
+      {
+        "value": "45+",
+        "label": "Trade Secrets"
+      },
+      {
+        "value": "10",
+        "label": "Global Geographies"
+      }
     ]
   },
   "manufacturing": {
+    "image_src": "assets/generated-image-edited.png",
+    "text_2": "Domestic sourcing of all critical materials eliminates the supply chain vulnerabilities and FEOC concerns that plague lithium-ion manufacturers dependent on overseas mineral processing.",
+    "heading": "Clare, Michigan Facility",
+    "image_alt": "ABC manufacturing facility producing bipolar lead battery modules",
+    "desc": "ABC's manufacturing headquarters in Clare, Michigan houses automated GreenSeal&reg; production lines with domestically sourced materials. Zero Foreign Entity of Concern supply chain risk. Full ITC domestic content eligibility.",
     "label": "Manufacturing",
     "title": "Built in Michigan. Sourced Domestically.",
-    "desc": "ABC's manufacturing headquarters in Clare, Michigan houses automated GreenSeal&reg; production lines with domestically sourced materials. Zero Foreign Entity of Concern supply chain risk. Full ITC domestic content eligibility.",
-    "heading": "Clare, Michigan Facility",
-    "text_1": "Our Manufacturing 4.0 facility in Clare, Michigan is purpose-built for bipolar lead battery production. Automated stacking, sealing, and filling processes ensure consistent quality across every module that leaves the line.",
-    "text_2": "Domestic sourcing of all critical materials eliminates the supply chain vulnerabilities and FEOC concerns that plague lithium-ion manufacturers dependent on overseas mineral processing.",
     "list_items": [
       "Automated GreenSeal&reg; production lines",
       "Domestically sourced lead and materials",
       "Zero FEOC supply chain risk",
       "ITC domestic content eligible"
     ],
-    "image_src": "./assets/tech-battery.png",
-    "image_alt": "ABC manufacturing facility producing bipolar lead battery modules"
+    "text_1": "Our Manufacturing 4.0 facility in Clare, Michigan is purpose-built for bipolar lead battery production. Automated stacking, sealing, and filling processes ensure consistent quality across every module that leaves the line."
   },
   "cta": {
     "label": "Get Started",
