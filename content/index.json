@@ -144,7 +144,7 @@
   },
   "head_extra": "\n<style>\n  @media (max-width: 1024px) {\n    .env-grid--four { grid-template-columns: repeat(2, 1fr) !important; }\n  }\n  @media (max-width: 768px) {\n    .env-grid--four { grid-template-columns: 1fr !important; }\n  }\n</style>",
   "hero": {
-    "image_src": "./assets/hero-main.png",
+    "image_src": "assets/deploy-coastal-storm.png",
     "image_alt": "ABC BoxBe containers and CEES™ units deployed along a cold Lake Superior coastline at dusk",
     "cta_secondary_href": "./contact.html",
     "cta_secondary_text": "Request Assessment",
