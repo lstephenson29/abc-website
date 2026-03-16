@@ -1,9 +1,9 @@
 <svg viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-  <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-  <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-  <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-  <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D4890A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-  <path d="M10 30 A14 14 0 0 1 38 30" fill="#D4890A"/>
+  <path d="M8 30 C6 22, 4 16, 3 8" stroke="#D28A0E" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  <path d="M14 26 C12 18, 12 12, 10 4" stroke="#D28A0E" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  <path d="M21 24 C21 16, 22 10, 22 2" stroke="#D28A0E" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  <path d="M28 24 C29 16, 32 10, 34 3" stroke="#D28A0E" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  <path d="M34 28 C37 22, 40 16, 44 10" stroke="#D28A0E" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  <path d="M10 30 A14 14 0 0 1 38 30" fill="#D28A0E"/>
   <line x1="2" y1="30" x2="46" y2="30" stroke="#3A5232" stroke-width="1.5"/>
 </svg>
