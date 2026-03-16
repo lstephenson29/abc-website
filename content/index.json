@@ -4,15 +4,15 @@
     "title": "Where Others Fail, ABC Performs",
     "items": [
       {
-        "image_src": "assets/hero-microgrid.png",
+        "image_src": "assets/scene-outback-community.png",
         "image_alt": "CEES™ battery storage units operating in extreme desert heat at 55 degrees Celsius",
         "temp": "55 C / No HVAC",
         "title": "Desert &amp; Extreme Heat",
         "desc": "Operates without climate control in conditions that require active cooling for lithium."
       },
       {
-        "image_src": "assets/env-coastal.png",
-        "image_alt": "CEES™ battery storage units able to operate in arctic storm surge conditions well below freezing temperatures",
+        "image_src": "assets/scene-arctic-outpost.png",
+        "image_alt": "CEES™ battery storage units able to operate in arctic conditions for critical power needs",
         "temp": "-40 C Rated",
         "title": "Arctic &amp; Sub-Zero",
         "desc": "Full performance at temperatures that shut down lithium-ion entirely."
@@ -87,7 +87,7 @@
     ]
   },
   "microgrid": {
-    "image_src": "assets/scene-outback-community.png",
+    "image_src": "assets/hero-microgrid.png",
     "image_alt": "ABC BoxBe containers powering a solar microgrid in the Australian outback",
     "label": "Microgrid Ready",
     "title": "The Foundation for Off-Grid Power",
