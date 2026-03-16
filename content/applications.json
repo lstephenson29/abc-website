@@ -9,48 +9,63 @@
   "hero": {
     "label": "Deployment Methodology",
     "title": "One Unit. Scale to Any Project.",
-    "desc": "The CEES\u2122 48 kWh cartridge is ABC's modular building block. Depending on scale, it deploys in three configurations: outdoor-rated enclosures for distributed installations, BoxBe ISO containers for mid-range projects, or constructed Battery Barn facilities for utility-scale storage."
+    "desc": "The CEES™ 48 kWh cartridge is ABC's modular building block. Depending on scale, it deploys in three configurations: outdoor-rated enclosures for distributed installations, BoxBe ISO containers for mid-range projects, or constructed Battery Barn facilities for utility-scale storage."
   },
   "deployment_cards": [
     {
-      "card_number": "1",
-      "image_src": "./assets/cees-installed-real.jpg",
-      "image_alt": "CEES\u2122 48 kWh outdoor-rated enclosure for distributed energy storage deployment",
+      "image_src": "assets/deploy-coastal-storm.png",
+      "image_alt": "CEES™ 48 kWh outdoor-rated enclosure for distributed energy storage deployment",
+      "link_href": " ",
+      "desc": "CEES™ units deploy in outdoor-rated NEMA3R/IP55 enclosures, linked to wall-mounted inverters. No building required. Ideal for remote sites, microgrids, island infrastructure, and installations where space is limited or construction is impractical. As deployed at the Manitou Islands project for the National Park Service.",
+      "link_text": " ",
       "label": "Outdoor Enclosures",
       "title": "Direct Deployment for Distributed Sites",
-      "desc": "CEES\u2122 units deploy in outdoor-rated NEMA3R/IP55 enclosures, linked to wall-mounted inverters. No building required. Ideal for remote sites, microgrids, island infrastructure, and installations where space is limited or construction is impractical. As deployed at the Manitou Islands project for the National Park Service.",
-      "tags": ["NEMA3R/IP55", "Wall-Mounted Inverters", "Remote Deployable", "No Building Required"],
-      "link_href": "",
-      "link_text": ""
+      "card_number": "1",
+      "tags": [
+        "NEMA3R/IP55",
+        "Wall-Mounted Inverters",
+        "Remote Deployable",
+        "No Building Required"
+      ]
     },
     {
-      "card_number": "2",
-      "image_src": "./assets/boxbe-container.png",
-      "image_alt": "BoxBe 20-foot ISO container with pre-integrated CEES\u2122 cartridges",
+      "image_src": "assets/scene-mountain-resort.png",
+      "image_alt": "BoxBe 20-foot ISO container with pre-integrated CEES™ cartridges",
+      "link_href": " ",
+      "desc": "Pre-integrated CEES™ cartridges housed in standard 10-foot ISO containers (384 kWh) or 20-foot ISO containers (768 kWh). Factory tested, transportable by standard flatbed, and deployable in weeks. Outdoor rated with IP55/NEMA3R protection and greater than 90% round-trip efficiency.",
+      "link_text": " ",
       "label": "BoxBe Containers",
       "title": "Containerized Storage, Ready to Ship",
-      "desc": "Pre-integrated CEES\u2122 cartridges housed in standard 10-foot ISO containers (384 kWh) or 20-foot ISO containers (768 kWh). Factory tested, transportable by standard flatbed, and deployable in weeks. Outdoor rated with IP55/NEMA3R protection and greater than 90% round-trip efficiency.",
-      "tags": ["384 kWh (10ft)", "768 kWh (20ft)", "IP55/NEMA3R", "Pre-Integrated"],
-      "link_href": "",
-      "link_text": ""
+      "card_number": "2",
+      "tags": [
+        "384 kWh (10ft)",
+        "768 kWh (20ft)",
+        "IP55/NEMA3R",
+        "Pre-Integrated"
+      ]
     },
     {
-      "card_number": "3",
-      "image_src": "./assets/battery-barn-interior.png",
-      "image_alt": "Battery Barn interior showing 432 CEES\u2122 cartridges stacked 4-high in 6 rows, ventilation ducts and hydrogen sensors on ceiling",
+      "image_src": "assets/aerial-footprint.png",
+      "image_alt": "Battery Barn interior showing 432 CEES™ cartridges stacked 4-high in 6 rows, ventilation ducts and hydrogen sensors on ceiling",
+      "link_href": "./batterybarn.html",
+      "desc": "Purpose-built warehouse facility housing 432 CEES™ cartridges for 5 MW / 20 MWh capacity. No HVAC, no fire suppression, no augmentation. Where lithium-ion demands 3 to 5 acres for equivalent capacity, ABC fits in a single building. 15-year daily cycle life warranty with zero augmentation cost.",
+      "link_text": "Learn more about Battery Barn &rarr;",
       "label": "Battery Barn",
       "title": "Utility-Scale in 6,000 Square Feet",
-      "desc": "Purpose-built warehouse facility housing 432 CEES\u2122 cartridges for 5 MW / 20 MWh capacity. No HVAC, no fire suppression, no augmentation. Where lithium-ion demands 3 to 5 acres for equivalent capacity, ABC fits in a single building. 15-year daily cycle life warranty with zero augmentation cost.",
-      "tags": ["5 MW / 20 MWh", "6,000 sq ft", "No HVAC", "15-Year Warranty"],
-      "link_href": "./batterybarn.html",
-      "link_text": "Learn more about Battery Barn &rarr;"
+      "card_number": "3",
+      "tags": [
+        "5 MW / 20 MWh",
+        "6,000 sq ft",
+        "No HVAC",
+        "15-Year Warranty"
+      ]
     }
   ],
   "case_study": {
     "label": "Proven Deployment",
     "title": "Manitou Islands, National Park Service",
     "heading": "72 kW / 288 kWh Off-Grid System",
-    "desc": "Deployed for the United States Federal Government at Sleeping Bear Dunes National Shoreline. CEES\u2122 outdoor enclosures with wall-mounted inverters powering all island infrastructure. Balanced three-phase 208V system configuration with two inverters per phase. Continuous power delivery in a remote, environmentally sensitive location.",
+    "desc": "Deployed for the United States Federal Government at Sleeping Bear Dunes National Shoreline. CEES™ outdoor enclosures with wall-mounted inverters powering all island infrastructure. Balanced three-phase 208V system configuration with two inverters per phase. Continuous power delivery in a remote, environmentally sensitive location.",
     "list_items": [
       "National Park Service, Sleeping Bear Dunes National Shoreline",
       "72 kW / 288 kWh off-grid configuration",
@@ -58,37 +73,37 @@
       "Two inverters per phase, six total",
       "Remote island deployment, no grid connection"
     ],
-    "image_src": "./assets/env-coastal.png",
-    "image_alt": "CEES\u2122 battery storage units deployed at coastal island for National Park Service"
+    "image_src": "assets/untitled-design-4-.svg",
+    "image_alt": "CEES™ battery storage units deployed at coastal island for National Park Service"
   },
   "environments": {
     "label": "Operating Environments",
     "title": "Engineered for Extremes",
     "items": [
       {
-        "image_src": "./assets/env-desert.png",
-        "image_alt": "CEES\u2122 battery storage units operating in extreme desert heat at 55 degrees Celsius",
-        "temp": "55\u00b0C / No HVAC",
+        "image_src": "assets/hero-microgrid.png",
+        "image_alt": "CEES™ battery storage units operating in extreme desert heat at 55 degrees Celsius",
+        "temp": "55°C / No HVAC",
         "title": "Desert &amp; Extreme Heat",
         "desc": "Operates without climate control in conditions that require active cooling for lithium."
       },
       {
-        "image_src": "./assets/env-arctic.png",
-        "image_alt": "CEES\u2122 battery storage units operating in arctic conditions at -40 degrees Celsius",
-        "temp": "-40\u00b0C Rated",
+        "image_src": "assets/scene-arctic-outpost.png",
+        "image_alt": "CEES™ battery storage units operating in arctic conditions at -40 degrees Celsius",
+        "temp": "-40°C Rated",
         "title": "Arctic &amp; Sub-Zero",
         "desc": "Full performance at temperatures that shut down lithium-ion entirely."
       },
       {
-        "image_src": "./assets/env-mountain.png",
-        "image_alt": "CEES\u2122 battery storage units deployed at a remote mountain outpost",
+        "image_src": "assets/deploy-mountain-hybrid.png",
+        "image_alt": "CEES™ battery storage units deployed at a remote mountain outpost",
         "temp": "High Altitude",
         "title": "Mountain &amp; Remote",
         "desc": "Reliable storage for high-altitude and difficult-access locations."
       },
       {
         "image_src": "./assets/env-coastal.png",
-        "image_alt": "CEES\u2122 battery storage units deployed in coastal flood zone",
+        "image_alt": "CEES™ battery storage units deployed in coastal flood zone",
         "temp": "Saltwater / Storm Surge",
         "title": "Coastal &amp; Flood Zone",
         "desc": "Flood-survivable, salt-resistant energy storage for vulnerable coastlines and islands."

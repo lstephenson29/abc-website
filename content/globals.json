@@ -1,14 +1,34 @@
 {
   "header": {
-    "logo_image": "./assets/abc-logo.png",
+    "logo_image": "assets/untitled-design-4-.svg",
     "logo_text": "Advanced Battery<br>Concepts",
     "logo_aria_label": "Advanced Battery Concepts Home",
     "nav_items": [
-      { "label": "Technology", "href": "./technology.html", "nav_key": "technology" },
-      { "label": "Deployments", "href": "./applications.html", "nav_key": "applications" },
-      { "label": "Battery Barn", "href": "./batterybarn.html", "nav_key": "batterybarn" },
-      { "label": "About", "href": "./about.html", "nav_key": "about" },
-      { "label": "Contact", "href": "./contact.html", "nav_key": "contact" }
+      {
+        "label": "Technology",
+        "href": "./technology.html",
+        "nav_key": "technology"
+      },
+      {
+        "label": "Deployments",
+        "href": "./applications.html",
+        "nav_key": "applications"
+      },
+      {
+        "label": "Battery Barn",
+        "href": "./batterybarn.html",
+        "nav_key": "batterybarn"
+      },
+      {
+        "label": "About",
+        "href": "./about.html",
+        "nav_key": "about"
+      },
+      {
+        "label": "Contact",
+        "href": "./contact.html",
+        "nav_key": "contact"
+      }
     ],
     "cta_text": "Request Assessment",
     "cta_href": "./contact.html"
@@ -19,27 +39,51 @@
       {
         "heading": "Technology",
         "links": [
-          { "label": "GreenSeal\u00ae", "href": "./technology.html" },
-          { "label": "CEES\u2122 Platform", "href": "./technology.html" },
-          { "label": "Specifications", "href": "./technology.html" }
+          {
+            "label": "GreenSeal®",
+            "href": "./technology.html"
+          },
+          {
+            "label": "CEES™ Platform",
+            "href": "./technology.html"
+          },
+          {
+            "label": "Specifications",
+            "href": "./technology.html"
+          }
         ]
       },
       {
         "heading": "Deployments",
         "links": [
-          { "label": "Outdoor Enclosures", "href": "./applications.html" },
-          { "label": "BoxBe Containers", "href": "./applications.html" },
-          { "label": "Battery Barn", "href": "./batterybarn.html" }
+          {
+            "label": "Outdoor Enclosures",
+            "href": "./applications.html"
+          },
+          {
+            "label": "BoxBe Containers",
+            "href": "./applications.html"
+          },
+          {
+            "label": "Battery Barn",
+            "href": "./batterybarn.html"
+          }
         ]
       },
       {
         "heading": "Company",
         "links": [
-          { "label": "About ABC", "href": "./about.html" },
-          { "label": "Contact", "href": "./contact.html" }
+          {
+            "label": "About ABC",
+            "href": "./about.html"
+          },
+          {
+            "label": "Contact",
+            "href": "./contact.html"
+          }
         ]
       }
     ],
-    "copyright": "\u00a9 2026 Advanced Battery Concepts, LLC. All rights reserved. Clare, Michigan."
+    "copyright": "© 2026 Advanced Battery Concepts, LLC. All rights reserved. Clare, Michigan."
   }
 }
