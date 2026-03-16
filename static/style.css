@@ -233,8 +233,8 @@ a:hover { color: var(--color-accent-hover); }
 
 .logo svg,
 .logo .logo-img {
-  width: 48px;
-  height: 36px;
+  height: 40px;
+  width: auto;
   flex-shrink: 0;
   object-fit: contain;
 }

@@ -1,6 +1,6 @@
 {
   "header": {
-    "logo_image": "./assets/abc-logo.svg",
+    "logo_image": "./assets/abc-logo.png",
     "logo_text": "Advanced Battery<br>Concepts",
     "logo_aria_label": "Advanced Battery Concepts Home",
     "nav_items": [
